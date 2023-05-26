@@ -12,7 +12,7 @@ int main(){
 	cout<<"Enter a number";
 	cin>>number;  
 	cout<<fact(number)<<endl;
-	}	
+		
 	return 0;
 }
 
