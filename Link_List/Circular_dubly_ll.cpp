@@ -1,8 +1,8 @@
+ 
 #include<bits/stdc++.h>
 using namespace std;
 
 class Node{
-
     public:
     int data;
     Node* next;
@@ -46,7 +46,7 @@ void insertNode(Node* tail,int element,int d){
 }
 
 void print(Node* tail){
- Node* temp =tail;
+ Node* temp = tail;
  do {
     cout<<tail->data<<" ";
     tail = tail->next;
@@ -55,14 +55,51 @@ void print(Node* tail){
   cout<<endl;
 }
 
+void deleteNoDe(Node * &tail, int value){
+    // empty list
+    if(tail == NULL){
+        cout<<"List is empty, please cheack again"<<endl;
+     return;
+    }
+    else{
+        // Non empty case
+     
+        // Assuming that "value" is present int the Linked Lsit 
+
+        Node* pre = tail;
+        Node* curr = pre->next;
+        while(curr->data != value){
+            pre = curr;
+            curr = curr->next;
+        }
+       pre->next = curr->next;
+       if(tail == curr){
+        tail = prev;
+       }
+       curr->next=NULL;
+       delete curr;
+    }
+}
 
 int main(){
    
    Node* tail = NULL;
 //    empty list
+  
    insertNode(tail,5,3);
    print(tail); 
+/*
+  insertNode(tail,3,5);
+   print(tail); 
 
+  insertNode(tail,5,7);
+   print(tail); 
 
+  insertNode(tail,5,6);
+   print(tail); 
+ */
+   deleteNoDe(tail,3);
+  
     return 0;
 }
+
