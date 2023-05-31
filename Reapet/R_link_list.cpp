@@ -1,3 +1,5 @@
+/*
+
 #include<iostream>
 using namespace std;
 
@@ -116,7 +118,7 @@ Node* tail = node1;
  
 print(head);
 
-insertAtTail(tail,12);
+insertAtTail(tail,12); 
 
 print(head);
 
@@ -135,3 +137,130 @@ deleteNode(3,head);
 print(head);
 return 0;
 }
+
+*/
+
+#include<iostream>
+using namespace std;
+
+class Node{
+  public:
+  int data;
+  Node* next;
+  Node* prev;
+
+  // constructor
+  Node(int d){
+
+    this->data=d;
+    this->prev = NULL;
+    this->next = NULL;
+  }
+
+};
+
+// gives the length the Linked List 
+int getLenght(Node* head){
+ int len = 0;
+  Node* temp = head;
+ 
+ while(temp != NULL){
+  len++;
+  temp = temp->next;
+ } 
+ return len;
+}
+
+// Traversing the Linked  list 
+void print(Node* head){
+  Node* temp = head;
+  while(temp !=NULL){
+  cout<<temp->data<<" ";
+  temp= temp->next;
+  }
+  cout<<endl;
+}
+
+void insertAtHead(Node* &head, int d){
+   
+   Node* temp = new Node(d);
+   temp->next = head;
+   head->prev = temp;
+   head = temp;
+
+}
+
+
+void insertAtTail(Node* &tail, int d){
+
+//  node Create 
+Node* temp = new Node(d);
+tail ->next = temp;
+temp->prev = tail;
+tail = temp;
+
+}
+
+void insertAtPositoin(Node* &tail,Node* &head,int position,int d){
+// insert at first position
+
+if(position == 1){
+  insertAtHead(head,d);
+  return;
+}
+
+Node* temp = head;
+int cnt = 1;
+
+ while(cnt<position-1){
+   temp = temp ->next;
+   cnt++;
+ }
+   
+  // insertion at last Posiotn 
+  if(temp->next == NULL){
+    insertAtTail(tail,d);
+    return ;
+  }
+// creaating node for d
+Node* nodeToinsert = new Node(d);
+
+nodeToinsert->next = temp->next;
+temp->next->prev = nodeToinsert;
+
+temp->next = nodeToinsert;
+nodeToinsert->prev = temp;
+}
+
+int main(){
+
+// Node* node1 = new Node(10);
+Node* head =NULL;
+Node* tail =NULL;
+print(head);
+
+cout<<getLenght(head)<<endl;
+
+ insertAtHead(head,11);
+ print(head);
+
+ insertAtHead(head,13);
+ print(head);
+
+
+ insertAtHead(head,8);
+ print(head);
+
+insertAtTail(tail,25);
+print(head);
+
+insertAtPositoin(tail,head,1,100);
+print(head);
+
+insertAtPositoin(tail,head,7,102);
+print(head);
+  return 0;
+}
+
+
+
