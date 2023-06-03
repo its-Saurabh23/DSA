@@ -1,11 +1,11 @@
 
-int getLength(Node* head){
+/*int getLength(Node* head){
 
 int len = 0;
 while(head !=NULL){
     len++;
     head->next;
-}
+}reverse1
 return len;
 
 }
@@ -24,3 +24,4 @@ while(cnt<ans){
 return tmep;
 
 }
+*/
