@@ -1,4 +1,4 @@
-#include<bits./stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 
@@ -8,6 +8,7 @@ int partition(int *arr,int s,int e){
 
     int cnt = 0;
     for(int i = s+1 ; i<=e; i++){
+        // kitne Number isse pivote se chote hai then uska index
         if(arr[i]<=pivot){
             cnt++;
         }
