@@ -1,4 +1,5 @@
 #include <iostream>
+#include <map>
 using namespace std;
 
 class Node
@@ -130,6 +131,25 @@ bool isCircular(Node* head){
   }
   return false;
 }
+
+bool detectLoop(Node* head){
+  if(head == NULL){
+    return false;
+  }
+  
+  map<Node*,bool> visted;
+  Node* temp = head;
+
+  while(temp !=NULL){
+    if(visted[temp]==true){
+      return true;
+    }
+
+    visted[temp] =true;
+    temp = temp->next;
+  }
+  return false;
+}
 int main()
 {
   Node *tail = NULL;
@@ -157,13 +177,14 @@ int main()
 
   deleteNode(tail, 3);
   print(tail);
- */
+ 
 
  if(isCircular(tail)){
   cout<<"Circular in Nature "<<endl;
- }
+ 
  else{
   cout<<"Not a Circualr "<<endl;
- }
+ } */
+
   return 0;
 }
