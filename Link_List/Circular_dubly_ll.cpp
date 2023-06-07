@@ -12,7 +12,7 @@ class Node{
         this->next =NULL;
     }
  
-    ~Node(){
+    ~Node(){ 
         int value = this->data;
         if(this->next !=NULL){
         delete next;
