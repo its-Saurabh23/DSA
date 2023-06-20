@@ -14,7 +14,7 @@ for(int i =0; i<n; i++){
 auto itr = lower_bound(arr,arr+n,4)-arr;
  cout<<itr<<endl;
 
-auto itr2 = upper_bound(arr,arr+n,4)-arr-1;
+auto itr2 = lower_bound(arr,arr+n,4+1)-arr-1;
  cout<<itr2<<endl;
     return 0;
 }
