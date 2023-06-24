@@ -84,10 +84,9 @@ void deletNode(Node* &tail,int value){
     else{
         // non-empty list
         // assuming that the value is present in the List
-
+        
         Node* prev = tail;
         Node* curr = prev->next;
-
         while(curr->data !=value){
            prev = curr;
            curr = curr->next;
