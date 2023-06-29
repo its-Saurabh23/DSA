@@ -26,7 +26,7 @@ bool findRedundantBrackets(string &s)
             }
               st.pop();
          if(isRedundant == true){
-         return true;
+         return true; 
        
         }
          
