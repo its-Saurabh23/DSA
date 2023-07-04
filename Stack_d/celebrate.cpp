@@ -28,7 +28,7 @@ class Solution
         // step 1 push all element in stack
         for(int i = 0 ;i<n; i++){
             s.push(i);
-        }
+        } 
         
         // get two element and compare
         while(s.size()>1){
