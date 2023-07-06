@@ -3,10 +3,6 @@
 class SpecialStack {
     stack<int>s;
     int mini;
-
-
-
-    
     public:
         
     void push(int data) {
