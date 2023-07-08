@@ -1,1 +1,1 @@
-reverse(name,len);
+i*i
