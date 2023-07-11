@@ -5,12 +5,11 @@ int main(){
 
 int n = 3;
 
-
+char ch ='A';
 for(int i =1; i<=n;i++){
     // rows ke liye
-  
+   
     for(int j = 1;j<=n;j++){
-    char ch ='A';
     cout<<" "<<ch;
     ch = ch+1;
     }
