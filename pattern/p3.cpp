@@ -3,7 +3,64 @@ using namespace std;
 
 int main(){
 
-int n = 3;
+int n = 4;
+
+
+for(int i= 1 ; i<=n;i++){
+    char ch = 'A'+n-1;
+    // row ke leye
+    for(int j=1;j<=i; j++){
+        cout<<" "<<ch;
+        ch++; 
+    }cout<<endl;
+}
+
+/*
+for(int i = 1; i<=n; i++){
+    // row ke leye
+    for(int j = 1; j<=i;j++){
+    char ch = 'A'+i+j-2;
+    cout<<" "<<ch;
+   }
+   cout<<endl;
+}
+
+
+char ch ='A';
+for(int i =1; i<=n;i++){
+    // rows ke liye
+
+    for(int j =1;j<=i; j++){
+        cout<<" "<<ch;
+        ch++;
+    }cout<<endl;
+}
+
+
+
+for(int i=1;i<=n;i++){
+    // row ke liye
+    char ch = 'A'+i-1;
+    for(int j =1;j<=i;j++){
+        cout<<" "<<ch;
+    }
+    cout<<endl;
+}
+
+
+
+for(int i =1; i<=n;i++){
+    // rows ke liye 
+    for(int j =1; j<=n; j++){
+        char ch = 'A'+i+j-2;
+
+        cout<<" "<<ch;
+    }
+     cout<<endl;
+}
+
+
+
 
 char ch ='A';
 for(int i =1; i<=n;i++){
@@ -16,7 +73,7 @@ for(int i =1; i<=n;i++){
        
     cout<<endl;
   } 
-/*
+
 for(int i = 1; i<=n; i++){
 
     for(int j = 1; j<=n; j++){
