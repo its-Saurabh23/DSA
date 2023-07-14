@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 Given that a function
-*/
+
 // k = 2;
 int vectro(vector<int>A,int n ,int k){
 
@@ -47,3 +47,4 @@ int vectro(vector<int>A,int n ,int k){
     }
 }
 
+*/
