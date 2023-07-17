@@ -6,18 +6,24 @@ int main()
 
     int n = 4;
 
-    for(int i =1; i<= n; i++){
+    for(int i = 1; i<= n; i++){
         // rows ke liye
-        for(int j =1; i<n; i++){
+        
+        for(int j = 1; j<=n-i; j++){
             cout<<" ";
         }
+        int cnt = 1;
         for(int k = 1; k<=i; k++){
-            cout<<i;
+            cout<<cnt;
+            cnt++;
         }
-        for(int )
-
-
-
+        // next triangle 
+          int num = 1;
+        for(int l = 1; l<i; l++){
+            cout<<num;
+            num++;
+        }
+        cout<<endl;
     }
  /*
     for(int i =1; i<=n; i++){
