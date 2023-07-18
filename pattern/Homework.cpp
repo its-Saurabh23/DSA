@@ -4,11 +4,41 @@ using namespace std;
 int main()
 {
 
-    int n = 4;
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
 
+        //   first triangle
+        int cnt = 1;
+        for (int j = 0; j <= n - i; j++)
+        {
+            cout << cnt;
+            cnt++;
+        }
+        // star print kane hai"
+        for(int k =1; k<i; k++){
+            cout<<"*";
+        }
+
+        // another star
+         for(int l =1; l<i; l++){
+            cout<<"*";
+        }
+        //another triang;e pattern 
+         int num = n-i+1;
+        for(int m = 0; m <=n-i; m++){
+            cout<<num;
+            num--;
+        }      
+
+         cout << endl;
+    }
+
+
+    /*
     for(int i = 1; i<= n; i++){
         // rows ke liye
-        
+
         for(int j = 1; j<=n-i; j++){
             cout<<" ";
         }
@@ -17,7 +47,7 @@ int main()
             cout<<cnt;
             cnt++;
         }
-        // next triangle 
+        // next triangle
           int num = 1;
         for(int l = 1; l<i; l++){
             cout<<num;
@@ -25,9 +55,9 @@ int main()
         }
         cout<<endl;
     }
- /*
+
     for(int i =1; i<=n; i++){
-        // row ke liye 
+        // row ke liye
 
         for(int j =1; j<=n-i;j++){
             cout<<" ";
@@ -56,7 +86,7 @@ int main()
         cout << endl;
     }
 
-   
+
     //  row ke liye
     for (int i = 0; i <= n; i++)
     {
