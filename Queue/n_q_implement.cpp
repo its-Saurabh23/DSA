@@ -38,22 +38,21 @@ public:
 
    //enqueue
 
-   int enqueue(int data,int qn){
+   void enqueue(int data,int qn){
     //over flow 
     if(freeSpot == -1){
         cout<<"NO free space is present"<<endl;
-        return -1;
+        return;
     }
     
     //find first free index
-
     int index = freeSpot;
+
 
     //update freespot
     freeSpot = next[index];
 
     //check wether first element 
-
     if(front[qn-1]==-1){
         front[qn-1] = index;
 
@@ -71,13 +70,42 @@ public:
 
    }
 
+int dequeue(int qn){
+    // underflow
 
+    if(front[qn-1]==-1){
+        cout<<"Queue underflow "<<endl;
+        return -1;
+    }
 
+    //find index
+    int index = front[qn-1];
+    
+    //front ko aaeg 
+    front[qn-1] = next[index];
 
+    //freeslsot kom manage
+    next[index] = freeSpot;
+    freeSpot = index;
+
+    return arr[index];
+}
 };
 
 int main()
 {
 
+
+kQueue q(10,3);
+q.enqueue(10,1);
+q.enqueue(15,1);
+q.enqueue(20,2);
+q.enqueue(25,1);
+
+cout<<q.dequeue(1)<<endl;
+cout<<q.dequeue(2)<<endl;
+cout<<q.dequeue(1)<<endl;
+cout<<q.dequeue(1)<<endl;
+cout<<q.dequeue(1)<<endl;
     return 0;
 }
