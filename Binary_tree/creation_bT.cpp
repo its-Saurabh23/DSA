@@ -51,7 +51,7 @@ void levelorderTraversal(node *root)
         if (temp == NULL)
         { // old level completed
             cout << endl;
-            if (!q.empty())// if queue has some element.
+            if (!q.empty()) // if queue has some element.
             {
                 q.push(NULL);
             }
@@ -72,57 +72,102 @@ void levelorderTraversal(node *root)
     }
 }
 
-void inorder(node* root){
-    //base case
-    if(root == NULL){
+void inorder(node *root)
+{
+    // base case
+    if (root == NULL)
+    {
         return;
     }
-    //left call
+    // left call
     inorder(root->left);
-    //Node print
-    cout<<root->data<<" ";
-    //right call
+    // Node print
+    cout << root->data << " ";
+    // right call
     inorder(root->right);
 }
 
-void preorder(node* root){
-    if(root==NULL){
+void preorder(node *root)
+{
+    if (root == NULL)
+    {
         return;
     }
 
-    cout<<root->data<<" ";
+    cout << root->data << " ";
     preorder(root->left);
     preorder(root->right);
 }
 
-void postorder(node* root){
-    //base case 
-    if(root==NULL){
-        return ;
+void postorder(node *root)
+{
+    // base case
+    if (root == NULL)
+    {
+        return;
     }
     postorder(root->left);
     postorder(root->right);
-    cout<<root->data<<" ";
+    cout << root->data << " ";
 }
 
+void buildFromLevel(node* &root)
+{
+    queue<node *> q;
+    cout << "Enter the data for root" << endl;
+    int data;
+    cin >> data;
+    root = new node(data);
+    q.push(root);
+
+    while (!q.empty())
+    {
+        node *temp = q.front();
+        q.pop();
+
+        cout << "Enter the left node: " <<temp->data << endl;
+        int leftdata;
+        cin >> leftdata;
+        if (leftdata != -1)
+        {
+            temp->left = new node(leftdata);
+            q.push(temp->left);
+        }
+
+        cout << "Enter the right node: " <<temp->data << endl;
+        int rightdata;
+        cin >> rightdata;
+        if (rightdata != -1)
+        {
+            temp->right = new node(rightdata);
+            q.push(temp->right);
+        }
+    }
+}
 int main()
 {
-
     node *root = NULL;
+    buildFromLevel(root);
+    levelorderTraversal(root);
+/*
+    1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1 
+  
     // creating a tre root->left = buildTree(root->left);e
     root = buildTree(root);
 
     // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
     // level order traversal
-    cout << "Print level order Traversal " <<endl;
+    cout << "Print level order Traversal " << endl;
     levelorderTraversal(root);
-    cout<<"inorder traversal is"<<endl; 
+    cout << "inorder traversal is" << endl;
     inorder(root);
-    
-    cout<<"pre order traversal"<<endl;
+
+    cout << "pre order traversal" << endl;
     preorder(root);
 
-    cout<<"post order traversal"<<endl;
+    cout << "post order traversal" << endl;
     postorder(root);
+    */
+
     return 0;
 }
