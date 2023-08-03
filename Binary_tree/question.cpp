@@ -80,7 +80,7 @@ Node* buildTree(string str)
 
 class Solution{
     public:
-    //Function to find the height of a binary tree.
+    //Function to find the height  of a binary tree.
     int height(struct Node* node){
       
       //base case 
