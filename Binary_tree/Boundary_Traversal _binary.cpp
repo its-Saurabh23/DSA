@@ -3,7 +3,7 @@ class Solution {
     private:
     void TraversalLeft(Node* root,vector<int> &ans){
         //base case
-        if((root==NULL) ||( root->left == NULL &&root->right == NULL)){
+        if((root==NULL) ||( root->left == NULL && root->right == NULL)){
             return;
         }
         ans.push_back(root->data);
