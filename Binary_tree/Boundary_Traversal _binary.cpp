@@ -19,14 +19,14 @@ class Solution {
         if(root == NULL){
             return;
         }
-        if(root->left == NULL && root->right == NULL)
+        if(root->left == NULL && root->right == NULL) 
           ans.push_back(root->data);
           
         TraverseLeaf(root->left,ans);
         
         TraverseLeaf(root->right,ans);
         
-    } 
+    }  
     void TraverseRight(Node* root,vector<int>&ans){
         //base case
         if((root == NULL) ||(root->left == NULL && root->right == NULL)){
