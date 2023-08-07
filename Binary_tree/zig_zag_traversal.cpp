@@ -19,7 +19,7 @@
             vector<int>ans(size);
             //level Processing 
             for(int i =0; i<size; i++){
-                Node* frontNode = q.front();
+                 Node* frontNode = q.front();
                 q.pop();
                 //Normal inser or reverse insert 
                 int index = leftToRight ? i:size -i-1 ;
