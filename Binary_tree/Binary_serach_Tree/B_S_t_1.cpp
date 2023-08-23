@@ -116,6 +116,83 @@ Node *insertBST(Node *root, int data)
     return root;
 }
 
+Node* minValue(Node* root){
+    Node* temp = root;
+
+    while(temp->left !=NULL){
+        temp = temp->left;
+    }
+    return temp;
+}
+
+Node* maxValue(Node* root){
+    Node* temp = root;
+
+    while (temp->right !=NULL)
+    {
+        temp = temp->right;
+    }
+    return temp;
+    
+} 
+
+Node* deleteFromBSt(Node* root,int val){
+
+    // basa  case
+     if(root == NULL){
+         return root;
+     }
+
+     if(root->data == val){
+
+        // 0 child   
+        if(root->left && root->right == NULL){
+            delete root;
+            return NULL;
+        }
+        // 1 child
+            
+        // left child
+          
+        if(root->left != NULL && root->right == NULL){
+            Node* temp = root->left;
+            delete root;
+            return temp;
+
+        }
+        // right child
+        if(root->left == NULL && root->right !=NULL){
+            Node* temp = root->right;
+            delete root;
+            return temp;
+        }
+
+        // 2 child 
+       if(root->left !=NULL && root->right !=NULL){
+
+        int mini = minValue(root->right)->data;
+        root->data = mini;
+        root->right = deleteFromBSt(root->right,mini);
+        return root;
+       }
+
+
+     }
+
+     else if(root->data >val){
+        // left part
+        root->left = deleteFromBSt(root->left,val);
+        return root;
+     }
+     else{
+        // right part
+        root->right = deleteFromBSt(root->right,val);
+        return root;
+     }
+}
+
+
+
 void takinginput(Node *&root)
 {
     int data;
@@ -146,6 +223,32 @@ int main()
 
     cout <<endl<< "Printing Postorder " << endl;
     postorder(root);
+    
+    cout<<endl;
+    cout<<"Min value is "<<minValue(root)->data<<endl;
+    cout<<"Max value is "<<maxValue(root)->data<<endl;
 
+//    deletion
+
+   root =  deleteFromBSt(root,50);
+
+
+    cout << "Printing BST " << endl;
+    levelOrderTraversal(root);
+
+    cout<<endl<< "Printing Inorder " << endl;
+    inorder(root);
+
+    cout <<endl<< "Printing Preorder " << endl;
+    preorder(root);
+
+    cout <<endl<< "Printing Postorder " << endl;
+    postorder(root);
+    
+    cout<<endl;
+    cout<<"Min value is "<<minValue(root)->data<<endl;
+    cout<<"Max value is "<<maxValue(root)->data<<endl;
+
+ 
     return 0;
 }
