@@ -146,7 +146,7 @@ Node* deleteFromBSt(Node* root,int val){
      if(root->data == val){
 
         // 0 child   
-        if(root->left && root->right == NULL){
+        if(root->left == NULL && root->right == NULL){
             delete root;
             return NULL;
         }
