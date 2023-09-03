@@ -97,7 +97,7 @@ Node* buildTree(string str) {
     // base case
     if(root == NULL){
       
-      return{INT_MAX,INT_MIN,true,0};
+      return{INT_MIN,INT_MAX,true,0};
     }
   Solution left  = solve(root->left,ans);
   Solution right = solve(root->right,ans);
