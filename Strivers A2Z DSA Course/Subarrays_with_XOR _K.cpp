@@ -1,4 +1,4 @@
-// kadan's algo
+// kadan's algo..
   /*
   int n = a.size();
    map<int,int>mpp;
