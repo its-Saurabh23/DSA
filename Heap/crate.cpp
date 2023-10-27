@@ -53,7 +53,7 @@ public:
         // rermove last element
         size--;
 
-        // take root node to its right postion 
+        //take root node to its right postion 
         int i = 1;
       while (i<size)
       {
