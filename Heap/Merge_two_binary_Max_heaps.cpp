@@ -21,8 +21,7 @@ class Solution{
         if(largest != i){
             swap(arr[largest],arr[i]);
             heapify(arr,size,largest);
-        }
-        
+        }     
         
     } 
     vector<int> mergeHeaps(vector<int> &a, vector<int> &b, int n, int m) {
