@@ -2,6 +2,10 @@
 // array must be sorted  
 
 //it will return the smallest index such that arr[n]>= target 
+
+
+// stl-   return lower_bound(arr.begin(),arr.end(),x) - arr.begin();
+
 int lowerBound(vector<int> arr, int n, int x) {
 	
    int low = 0,high = n-1;
