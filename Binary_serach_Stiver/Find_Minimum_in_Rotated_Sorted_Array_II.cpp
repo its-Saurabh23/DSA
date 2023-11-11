@@ -1,5 +1,5 @@
 
-// Think about the mid and last elemtn comparsion and take decesion 
+// Think about the mid and last element comparsion and take decesion 
 
 class Solution {
 public:
