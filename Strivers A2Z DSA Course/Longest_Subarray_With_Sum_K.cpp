@@ -1,6 +1,6 @@
 int getLongestSubarray(vector<int>& nums, int k){
 
-// prefixSum 
+// prefixSum method
 
 map<long long,int>preSum;
 long long sum = 0;
