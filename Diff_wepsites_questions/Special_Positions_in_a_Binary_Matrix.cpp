@@ -37,3 +37,42 @@ public:
 
 
 //  brute force Apporach 
+
+
+// Better apporach 
+class Solution {
+public:
+    int numSpecial(vector<vector<int>>& mat) {
+        int m = mat.size(); // no. of rows 
+        int n = mat[0].size();// no of colum
+        
+        vector<int> rowCount(m,0);  // how many ones int the rows 
+        vector<int> colCount(n,0);  // how many ones in clo 
+
+        for(int i =0;i<m;i++){
+            for(int j =0;j<n; j++){
+              
+              if(mat[i][j] == 1) {
+                  rowCount[i]++;
+                  colCount[j]++;
+              }
+            }
+        }
+
+        int result = 0;
+
+        for(int i = 0; i<m;i++){
+            for(int j = 0; j<n; j++){
+                if(mat[i][j] == 0 )continue;
+
+                if(rowCount[i] == 1 && colCount[j] == 1){
+                    result++;
+                }
+            }
+        }
+        return result;
+    }
+};
+
+// T.c is reduce but the spce is increased 
+
