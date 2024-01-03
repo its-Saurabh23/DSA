@@ -28,3 +28,6 @@ class Solution {
     return ans;
     }
 };
+
+// T.c
+// O.S       both are linear
