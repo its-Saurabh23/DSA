@@ -10,7 +10,6 @@ void bfs(vector<vector<int>> &adj,unordered_map<int,bool>visited
   while(!q.empty()){
     // step 1;
       int forntNode = q.front();
-      
       // step 2;  
       q.pop();
 
