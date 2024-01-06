@@ -48,3 +48,13 @@ int main(){
     g.print();
     return 0;
 }
+
+//  adjcency list 
+
+//first  second  
+// 4->   3,0,
+// 3->   2,4,1,
+// 2->   1,3,
+// 1->   0,2,3,
+// 0->   1,4,
+             
