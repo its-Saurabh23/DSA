@@ -1,3 +1,14 @@
+/*
+Algorithm
+
+    . Make visited Array to tackle both disconnected & visited Nodes.
+    . Call DFS on each unvisited node
+        Call DFS on unvisited Neighbours
+        After making all calls to Neighbours Store current Node in a Stack.
+    . Finally, pop all the elements of stack into resultant Vector
+*/
+
+
 #include <bits/stdc++.h> 
 bool topoSort(int node,vector<bool>&visited,unordered_map<int,list<int>>&adj,
 stack<int>&s){
