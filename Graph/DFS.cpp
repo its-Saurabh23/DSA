@@ -4,7 +4,6 @@ class Solution {
 
    void dfs(int node,vector<int>adj[],vector<int>&visited,vector<int>&ans){
      
-
        ans.push_back(node);
         visited[node]= 1;       
        
