@@ -1,9 +1,7 @@
 class Solution {
 public:
     vector<int> sequentialDigits(int low, int high) {
-     
-
-
+    
     //  first Method  ->  0(1)
 //    create all the possible ans
   vector<int> allPossible ={
