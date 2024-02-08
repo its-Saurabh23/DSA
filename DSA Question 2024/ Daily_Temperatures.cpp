@@ -16,7 +16,7 @@ public:
                         ans[i] = 0;          
                    }
                    else{
-                    //    difference 
+                     //    difference 
                     ans[i] = st.top() - i;
                    }
                    st.push(i);
