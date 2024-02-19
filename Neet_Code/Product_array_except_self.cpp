@@ -5,7 +5,7 @@ public:
         int prefix = 1;
         vector<int>ans(n,1);
 
-// left to right Traversal  
+//left to right Traversal  
         for(int i =0; i<n;i++){
         ans[i] = prefix;
         prefix = prefix*nums[i];
