@@ -10,7 +10,7 @@ public:
 Rectangle(){
     length = 10;
 }
-// friend function
+//friend function
 friend int printLength(Rectangle);
 
 };
