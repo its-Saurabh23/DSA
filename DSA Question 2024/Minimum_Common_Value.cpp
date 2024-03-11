@@ -5,6 +5,7 @@ public:
         int n1 = nums1.size();
         int n2 = nums2.size();
 
+
         int i = 0,j = 0;
         while(i<n1 && j<n2){
 
