@@ -20,3 +20,5 @@ public:
         return ans;
     }
 };
+
+// by division metod
