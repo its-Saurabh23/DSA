@@ -52,3 +52,34 @@ public:
         }  
     }
 };
+
+
+
+// Custom stack
+void reorderList(ListNode* head) {
+        // Step 1 Put all node into stack it will reverse it       
+        stack<ListNode*>st;
+
+        ListNode* curr  = head;
+        while(curr){
+            st.push(curr);
+            curr = curr->next;
+        }
+
+        // Step 2 Pop the half element from the stack
+
+        int k = st.size()/2;
+         curr = head;
+
+        while(k--){
+           ListNode* topNode = st.top();
+           st.pop();
+
+          ListNode* temp = curr->next;
+          curr->next = topNode;
+          topNode->next = temp;
+
+          curr = temp; 
+        }
+       curr->next = NULL;
+    }
