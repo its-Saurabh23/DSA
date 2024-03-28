@@ -95,7 +95,7 @@ class Solution{
       pair<int,int> leftsubtree =  isBlanaceFast(root->left);
       pair<int,int> rightsubtree =  isBlanaceFast(root->right);
       
-      // getting balance
+      //getting balance
       bool leftAns = leftsubtree.first;
       bool rightAns = rightsubtree.first;
       
