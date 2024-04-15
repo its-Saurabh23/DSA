@@ -1,4 +1,4 @@
-// USe school Method to find the Increasing order int the string and make it monotomnic stack
+//USe school Method to find the Increasing order int the string and make it monotomnic stack
 
 class Solution {
 public:
