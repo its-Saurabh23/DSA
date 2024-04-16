@@ -3,7 +3,7 @@
  // Function with return statement
  
  bool isPrimeNumber(int number){
-// 	bool isPrime=true;
+// bool isPrime=true;
  	for(int i = 2; i<number; i++){
  		if(number % i == 0)
  		 return false;
