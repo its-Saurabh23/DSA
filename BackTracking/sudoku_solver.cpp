@@ -4,11 +4,11 @@ bool isSafe(int row,int col, vector<vector<char>>&board,char val){
       
   for(int i = 0; i<board.size();i++){
 
-    //   row 
+    // row 
      if(board[row][i] == val){
          return false;
      }
-    //  col
+    // col
      if(board[i][col] == val){
          return false;
      }
@@ -24,7 +24,7 @@ bool isSafe(int row,int col, vector<vector<char>>&board,char val){
 
  bool solve(vector<vector<char>> &board){
     int n = board.size();
-    //step 1 find empty cell (Traveerse matrix)
+    // step 1 find empty cell (Traveerse matrix)
 
     for(int i = 0; i<n; i++){
         for(int j = 0;j<n; j++){
