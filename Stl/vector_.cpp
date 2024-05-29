@@ -178,11 +178,11 @@ maxi.push(0);
 // for(int i =0; i<n; i++){
 //     cout<<maxi.top()<<" ";
 //     maxi.pop();
-// }cout<<endl;
+// } cout<<endl;
 
 
 
-// //For min Heap
+//  For min Heap
 
 // mini.push(5);
 // mini.push(1);
