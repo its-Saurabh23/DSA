@@ -123,7 +123,7 @@ node *bulidTree(node *root)
 
 void levelorderTraqversal(node *root)
 {
-    queue<node *> q;
+    queue<node*> q;
     q.push(root);
     q.push(NULL);
 
