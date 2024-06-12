@@ -36,6 +36,42 @@ class LinkedList{
     }
 
   }
+
+void DeleteNode(int data){
+  if(head  == NUll){
+    return;
+  }
+
+  if(head->data == data){
+    Node* temp = head;
+    head = temp->next;
+    Delete temp;
+    return;
+  }
+  
+  // main code
+
+  Node* temp = head;
+ // get the  previous node of node which we want ot delete 
+
+ while(temp ->next == NUll && temp->next->data != data){
+  temp = temp->next;
+ }
+
+  //if the Node if  Not Found 
+  while(temp->next == NUll){
+    count<<"Node data " data <<"is Not aviable "<<endl;
+  }
+
+  // we foun the node 
+    Node* nodeToddelete  = temp->next;
+    temp->next = temp->next->next;
+    delete nodeToddelete;
+    return;
+
+}
+
+
   
  void Traversal(){
     singlLL* temp = head;
