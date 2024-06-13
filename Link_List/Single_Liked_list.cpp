@@ -12,7 +12,6 @@ class singlLL{
 };
 
 class LinkedList{
-    
   private:
   singlLL* head;
   
@@ -20,9 +19,7 @@ class LinkedList{
   LinkedList(): head(nullptr){};   // constructor
   
   void Insert(int data){
-    
     singlLL * newNode = new singlLL(data);
-    
     if(head == nullptr){
         head = newNode;
     }
@@ -34,45 +31,52 @@ class LinkedList{
         }
         temp->next = newNode;
     }
-
   }
+
+
 
 void DeleteNode(int data){
   if(head  == NUll){
     return;
   }
-
   if(head->data == data){
     Node* temp = head;
     head = temp->next;
     Delete temp;
     return;
   }
-  
-  // main code
-
-  Node* temp = head;
+Node* temp = head;
  // get the  previous node of node which we want ot delete 
-
  while(temp ->next == NUll && temp->next->data != data){
   temp = temp->next;
  }
-
   //if the Node if  Not Found 
   while(temp->next == NUll){
     count<<"Node data " data <<"is Not aviable "<<endl;
   }
-
   // we foun the node 
     Node* nodeToddelete  = temp->next;
     temp->next = temp->next->next;
     delete nodeToddelete;
     return;
-
 }
 
 
-  
+ void update(int oldData, int nedData){
+     Node* temp = head;
+    while(temp->next != NULL){ 
+        if(temp->data == oldData){
+            temp->data = nedData; 
+            return;
+        }
+        temp = temp->next;
+        
+    } 
+    std::cout << "Node with value"<<oldData <<"Not found" << std::endl;
+ }
+
+
+
  void Traversal(){
     singlLL* temp = head;
     
