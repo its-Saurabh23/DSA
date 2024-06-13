@@ -3,7 +3,6 @@ using namespace std;    list.Insert(30);
 
 
 class singlLL{
-  
   public:
   int data;
   singlLL *next;
