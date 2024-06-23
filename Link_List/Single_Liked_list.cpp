@@ -61,11 +61,11 @@ Node* temp = head;
 }
 
 
- void update(int oldData, int nedData){
+ void update(int oldData, int nodeData){
      Node* temp = head;
     while(temp->next != NULL){ 
         if(temp->data == oldData){
-            temp->data = nedData; 
+            temp->data = nodeData; 
             return;
         }
         temp = temp->next;
