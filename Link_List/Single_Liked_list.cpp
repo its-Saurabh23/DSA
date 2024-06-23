@@ -46,10 +46,10 @@ void DeleteNode(int data){
   }
 Node* temp = head;
  // get the  previous node of node which we want ot delete 
- while(temp ->next == NUll && temp->next->data != data){
+ while(temp ->next != NUll && temp->next->data != data){
   temp = temp->next;
  }
-  //if the Node if  Not Found 
+  //if the Node if Not Found 
   while(temp->next == NUll){
     count<<"Node data " data <<"is Not aviable "<<endl;
   }
