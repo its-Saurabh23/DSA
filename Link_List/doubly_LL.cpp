@@ -45,7 +45,7 @@ int len = 0;
    }
    return len;
 }
- void  insertAtHead(Node* &tail,Node* &head,int d){
+void  insertAtHead(Node* &tail,Node* &head,int d){
  if(head == NULL){
  Node* temp = new Node(d);
  head = temp;
