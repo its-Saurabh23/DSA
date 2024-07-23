@@ -3,7 +3,7 @@ using namespace std;
 
 
 class Stack{
-    public:
+public:
 // Properties 
 int *arr;
 int top;
@@ -54,10 +54,6 @@ int peek(){
         return false;
     }
  }
-
-     
-
-
 };
 int main(){
 
@@ -71,18 +67,13 @@ st.push(48);
 st.push(90);
  
 cout<<st.peek()<<endl;
-
 st.pop();
-
 cout<<st.peek()<<endl;
-
 st.pop();
-
 cout<<st.peek()<<endl;
 st.pop();
 
 cout<<st.peek()<<endl;
-
 if(st.isEmpty()){
     cout<<"Stack is Empty Meri haa jaan "<<endl;
 }
