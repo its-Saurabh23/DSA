@@ -34,3 +34,24 @@ public:
             return dummy->next;
     }
 };
+
+
+//recursive apporach
+class Solution {
+public:
+    ListNode* utilityFunction(ListNode* head){
+        if(head == NULL || head->next == NULL){
+            return head;
+        }
+        
+        ListNode* newhead = utilityFunction(head->next);
+        ListNode* front = head->next;
+        front->next = head;
+        head->next = NULL;
+        
+        return newhead;
+    }
+    ListNode* reverseList(ListNode* head) {
+        return utilityFunction(head);
+    }
+};
