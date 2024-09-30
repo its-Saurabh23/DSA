@@ -67,7 +67,6 @@ int main()
    *  *  *  * 
   *  *  *  *  *  
 */
-
   
   for(int i=1; i<=n; i++){
     
@@ -80,5 +79,37 @@ int main()
     }
     cout<<endl;
   }
+
+    for(int i = 0; i<n; i++){
+    if(i == 0){
+        for(int j = 0; j<n; j++){
+            cout<<"* ";
+        }
+    }
+    else{
+        cout<<"* ";
+        for(int k =0; k<n-i-2; k++){
+            cout<<"  ";
+        }   
+        if(i == n-1){
+
+        }else{
+            cout<<"* ";
+        }
+    }
+    cout<<endl;
+}
+
+/*    
+// outPut
+
+* * * * * * 
+*       *
+*     *
+*   *
+* *
+*
+
+ */
     return 0;
 }
