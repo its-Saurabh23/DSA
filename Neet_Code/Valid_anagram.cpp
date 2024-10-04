@@ -28,6 +28,33 @@ bool Anagram(string s, string t)
     return true;
 }
 
+bool isAnagram(string s, string t) {    
+
+        sort(s.begin(), s.end());   // N(log N)
+        sort(t.begin(), t.end());
+        if (s.size() != t.size())return false;
+        
+       for(int i = 0, j= 0; i<s.size(),j<t.size(); i++,j++){
+           if(s[i] == t[j]){
+               continue;
+           }
+           else{
+               return false;
+           }
+       }
+       return true;
+    }
+
+ bool isAnagram(string s, string t) {
+        
+        // sort and compare
+        sort(s.begin(),s.end());  // N(log N);
+        sort(t.begin(),t.end());
+        if(s==t)return true;
+
+        return false;
+    }
+
 int main()
 {
     string s = "anagra";
