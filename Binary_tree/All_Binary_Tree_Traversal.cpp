@@ -203,6 +203,41 @@ void inOrderTraversalItrativeWay(BinaryTree *root){
   
 }
 
+
+void morriesInOrderTraversal(BinaryTree *root){
+      if(root == nullptr){
+        cout<<"Tree is empty";
+        return;
+      }
+
+    BinaryTree *temp = root;
+
+    while(temp != NULL){
+    
+       if(temp->left == NULL){
+        cout<<temp->data<<" ";
+        temp = temp->right;
+       }else{
+        //finding predecessor node
+       BinaryTree *pred = temp->left;
+       while (pred->right != NULL && pred->right != temp)
+       {
+        pred = pred->right;
+       }
+
+       if(pred->right == NULL){
+          pred->right = temp;    // link
+          temp = temp->left; 
+       }else{
+          pred->right = NULL;  // unlink
+          cout<<temp->data<<" ";
+          temp = temp->right;
+       } 
+       }
+    }  
+
+}
+
 int main(){
    
   BinaryTree *root = nullptr;
@@ -220,5 +255,6 @@ int main(){
   // preOrderTraversalItrativeWay(root);
   // postOrderTraversalItrativeWay(root);
   // inOrderTraversalItrativeWay(root);
+  // morriesInOrderTraversal(root);
   return 0;
 }
