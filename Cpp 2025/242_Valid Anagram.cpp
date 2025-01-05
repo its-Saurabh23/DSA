@@ -9,7 +9,7 @@ public:
      unordered_map<char,int>mp;
 
      for(char ch :s){
-         mp[ch]++;
+        mp[ch]++;
      }
 
      for(char ch:t){
