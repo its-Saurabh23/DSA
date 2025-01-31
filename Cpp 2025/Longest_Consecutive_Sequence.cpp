@@ -1,6 +1,7 @@
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
+        // insertion in set O(1);  nums have n numbers so O(n);
         unordered_set<int>numset(nums.begin(),nums.end());
         int longestStreak = 0;
 
