@@ -164,6 +164,19 @@ bool checkBST(Node* root,int &prev){
 //     return checkBST(root->right, prev);
 // }
 
+void ArrayToBST(vector<int>&ans,int left,int right,vector<int>&sol){
+     
+     if(left> right){
+         return;
+     }
+     
+     int mid = (left + right)/2;
+     sol.push_back(ans[mid]);
+     
+     ArrayToBST(ans,left,mid-1,sol);
+     ArrayToBST(ans,mid+1,right,sol);
+}
+
 int main(){
     Node* root = NULL;
     vector<int>arr ={8,10,6,3,1,4};
@@ -246,6 +259,18 @@ int main(){
 }
 
 
+vector<int>inputVector={1,2,3,4,5,6};
+int left = 0;
+int right = inputVector.size()-1;
+
+vector<int>sol;
+
+ArrayToBST(inputVector,left,right,sol);
+
+ 
+ for(int val:sol){
+     cout<<val<<" ";
+ }
 
 
 
@@ -255,3 +280,4 @@ int main(){
 
 
 
+// don't forget to } --> main
