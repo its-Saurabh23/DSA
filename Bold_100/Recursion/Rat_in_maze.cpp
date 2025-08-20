@@ -37,7 +37,7 @@ void rateInMaze(vector<vector<int>>mat,int row,int col,vector<string>&paths,stri
 		// BackTrack.
 		visited[row][col] = 0;
 	}
-	return;
+	return; 
 }
 
 int main() {
