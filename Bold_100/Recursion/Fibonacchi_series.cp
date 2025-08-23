@@ -17,3 +17,23 @@ int main() {
     
     return 0;
 }
+
+
+                //pre1  prev2  
+// itrative way   0,     1,    1,   2,   3,   5, 
+ 
+ int main(){
+
+    int prev1 = 0 ;
+    int prev2 = 1;
+
+    for(int i = 2; i<n; i++){   
+       int result = prev1 + prev2;
+
+       cout<<result;
+       
+       prev1 = prev2;
+       prev2 = result;
+    }
+
+ }
