@@ -29,8 +29,8 @@ bool wordExit(vector<vector<char>>&board,string word){
                return true;
             }
         }
-     }
-     return false;
+    }
+     return false; 
 };
 
 
