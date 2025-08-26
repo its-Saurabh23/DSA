@@ -17,6 +17,7 @@ int main(){
     cin>>str;
      
     string result ="";
+    
     // cout<<str.length()<<endl;
     // cout<<str.size()<<endl;
     // int n = str.length()-1;
