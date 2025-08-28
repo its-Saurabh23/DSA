@@ -10,9 +10,7 @@ using namespace std;
 //     } 
 //     cout<<i<<endl;
 //     print(n,i+1);
-// }
-
-
+// 
 // with single argument
 
 void print(int n){
