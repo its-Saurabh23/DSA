@@ -9,7 +9,6 @@ int  totalStairCount(int n){
     return totalStairCount(n-1) + totalStairCount(n-2);
 }
 int main(){
-
     int num;
     cin>>num;
     int result  = totalStairCount(num);
