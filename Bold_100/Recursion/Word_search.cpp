@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool dfs(int i,int j,vector<vector<char>>&board,string word,int k){
+    
     // validation first check
     if(word.size() == k) return true;
     if(i<0 || j<0 || i>=board.size() || j>=board[0].size() || board[i][j] != word[k]){
