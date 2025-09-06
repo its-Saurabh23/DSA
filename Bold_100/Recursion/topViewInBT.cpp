@@ -47,6 +47,5 @@ int main(){
     root->right->right = new Node(7);
 
     topLevel(root);
-
     return 0;
 }
