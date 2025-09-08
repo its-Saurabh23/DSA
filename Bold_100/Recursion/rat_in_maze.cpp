@@ -55,7 +55,6 @@ int main(){
         //     {0,0,0,0},
         //     {0,0,0,0}
         // };
-        
     int n = board.size();
     
     // vector<vector<bool>>visited(n,false);
