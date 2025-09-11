@@ -17,6 +17,21 @@ int countVol(string str,int index){
     
 } 
 
+// const vector<int>&arr ==> read-only 
+// vector<int>&arr ==> mutable  
+
+int getMin(const vector<int>&arr,int mini,int index){
+    
+    if(index == -1){
+
+        return mini;
+    }
+    if(arr[index]<mini){
+        mini = arr[index];
+    }
+    return getMin(arr, mini, index -1);
+}
+
 
 int main(){
    string str ="hii how are u i am fine";
