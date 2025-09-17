@@ -28,7 +28,7 @@ int main(){
             if(x == it.size()){
                 continue;
             }
-            cout<<",";
+          cout<<",";
         }
       } 
       cout<<"}\n";
