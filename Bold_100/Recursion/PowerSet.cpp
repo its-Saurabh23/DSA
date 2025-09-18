@@ -14,6 +14,8 @@ void PowerSet(vector<int>&nums,int index,vector<vector<int>>&ans,vector<int>&cur
    curr.pop_back();
 }
 
+
+
 int main(){
     vector<int>nums={1,2};
     vector<vector<int>>ans;
