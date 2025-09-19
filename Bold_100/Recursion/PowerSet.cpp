@@ -8,9 +8,7 @@ void PowerSet(vector<int>&nums,int index,vector<vector<int>>&ans,vector<int>&cur
    }
    PowerSet(nums,index+1,ans,curr);
    curr.push_back(nums[index]);
-
    PowerSet(nums,index+1,ans,curr);
-
    curr.pop_back();
 }
 
