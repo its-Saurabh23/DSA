@@ -17,7 +17,6 @@ int main(){
     vector<vector<int>>ans;
     vector<int>curr;
     PowerSet(nums,0,ans,curr);
-
     for(auto& it:ans){
       cout<<"{";
       for(int x:it){
