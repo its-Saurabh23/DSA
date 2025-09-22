@@ -30,3 +30,28 @@ int main(){
 
     return 0;
 }
+
+
+ #include<bits/stdc++.h>
+ using namespace std;
+ 
+   void reverse_String(string &str,int s,int n){
+       // Base case
+       if(s>=n){
+         return;
+       }
+       
+       swap(str[s],str[n]);
+       reverse_String(str,s+1,n-1);
+   }
+ 
+ 
+ int main(){
+    string str;
+    std::cout << "Reverse String" << std::endl;
+    std::cin >> str;
+    int length = str.length();
+    
+    reverse_String(str,0,length-1);
+    cout<<"After Reversing String "<<'\n'<<str <<'\n';
+ }
