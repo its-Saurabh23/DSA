@@ -34,7 +34,6 @@ bool wordExit(vector<vector<char>>&board,string word){
      return false; 
 };
 
-
 int main(){
     vector<vector<char>>board ={
         {'A','B','C','E'},
