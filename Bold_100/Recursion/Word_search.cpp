@@ -7,6 +7,7 @@ bool dfs(int i,int j,vector<vector<char>>&board,string word,int k){
     if(i<0 || j<0 || i>=board.size() || j>=board[0].size() || board[i][j] != word[k]){
         return false;      
     }
+    
     // making visited
     char temp = board[i][j];
     board[i][j] = '$';
