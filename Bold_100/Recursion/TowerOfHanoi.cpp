@@ -6,6 +6,7 @@ void towerOfHanoi(int n,char from_rod,char to_rod,char aux){
     // Base case 1
     if(n == 0)return;
     towerOfHanoi(n-1,from_rod,aux,to_rod);
+    cout<<""
 
 }
 
