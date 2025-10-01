@@ -8,7 +8,6 @@ void towerOfHanoi(int n,char from_rod,char to_rod,char aux){
     towerOfHanoi(n-1,from_rod,aux,to_rod);
     cout<<"move disk"<<n<<"from rod"<<from_rod<<"to road"<<to_rod<<;
     towerOfHanoi(n-1,aux,to_rod,from_rod);
-
 }
 
 int main(){
