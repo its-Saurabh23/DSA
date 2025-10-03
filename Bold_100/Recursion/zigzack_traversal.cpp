@@ -41,11 +41,9 @@ vector<vector<int>> zigZagTraversal(Node* root) {
                 st.pop();
             }
         }
-
         ans.push_back(level);
         flag = !flag;
     }
-
     return ans;
 }
 
