@@ -8,6 +8,42 @@ struct Node {
     Node(int val) : data(val), left(NULL), right(NULL) {}
 };
 
+vector<vector<int>> zigZagTraversal(NOde* root){
+    vector<vector<int>>ans;
+     if(root == NULL)return ans;
+     queue<Node*>q;
+     bool flag = true;
+     while(!q.empty()){
+        vector<int>level;
+        stack<int>st;
+        int s = q.size();
+
+        for(int i = 0; i<s; i++){
+            Node * temp = q.front();
+            q.pop();
+            if(flag){
+                level.push_back(temp->data);
+            }else{
+                st.push(temp->data);
+            }
+            if(temp->left){
+                q.push_back(temp->left);
+            }
+            if(temp->right){
+                q.push_back(temp->right);
+            }
+        }
+        if(!flag){
+            while(!st.empty()){
+               level.push_back(st.top());
+                st.pop();
+            }
+        }
+        ans.push_back(level);
+        flag = !flag
+     } 
+     return ans;
+}
 vector<vector<int>> zigZagTraversal(Node* root) {
     vector<vector<int>> ans;
     if (!root) return ans;
