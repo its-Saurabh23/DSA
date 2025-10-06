@@ -8,7 +8,7 @@ struct Node {
     Node(int val) : data(val), left(NULL), right(NULL) {}
 };
 
-vector<vector<int>> zigZagTraversal(NOde* root){
+vector<vector<int>> zigZagTraversal(Node* root){
     vector<vector<int>>ans;
      if(root == NULL)return ans;
      queue<Node*>q;
