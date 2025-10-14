@@ -10,9 +10,8 @@ class Node{
   Node(int val){
     data = val;
     next = NULL;
-  }
-    
-};
+  }  
+}; 
 
 
 Node* getIntersection(Node* h1,Node* h2){
