@@ -14,6 +14,9 @@ class Node{
     }
 };
 
+Node * Flattening(){
+    
+}
 
 int main(){
     Node* head = new Node(1);
