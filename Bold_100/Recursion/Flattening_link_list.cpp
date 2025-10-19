@@ -14,7 +14,7 @@ class Node{
     }
 };
 
-Node * Flattening(){
+Node * Flattening(Node* head, Node bottom){
     
 }
 
