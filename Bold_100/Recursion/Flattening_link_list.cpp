@@ -15,6 +15,7 @@ class Node{
 };
 
 Node * Flattening(Node* head, Node bottom){
+    vector<int>result;
     
 }
 
@@ -24,7 +25,7 @@ int main(){
     
     head->Bottom = new Node(1.1);
 
- return 0;
+    return 0;
  
  
 }
