@@ -18,6 +18,9 @@ Node * Flattening(Node* head, Node bottom){
     vector<int>result;
 
     Node* temp;
+    while(){
+        
+    }
     
 }
 
