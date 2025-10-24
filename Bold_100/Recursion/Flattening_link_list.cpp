@@ -54,7 +54,7 @@ Node * Flattening(Node* head, Node bottom){
 void print(Node* head){
      
     while(temp != NULL){
-
+ 
        cout<<temp->data<<"-> ";
        temp = temp->next;
 
