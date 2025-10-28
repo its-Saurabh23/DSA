@@ -74,8 +74,6 @@ void print(Node* head){
          temp = temp->next;
     }cout<<"NULL";
 }
-
-
 int main(){
 
     Node* head = NULL;
