@@ -47,8 +47,7 @@ int main(){
 // cout<<first2<<endl;
 
 // bool first3 = (a<=b);
-// cout<<first3<<endl
-// ;
+// cout<<first3<<endl;
 // bool first4 = (a>=b);
 // cout<<first4<<endl;
 
