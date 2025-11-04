@@ -66,10 +66,7 @@ for(int i =0; i<v.size();i++)
 
 */
 
-
 // Iterators for 2D vectors
- 
-
 
     return 0;
 }
