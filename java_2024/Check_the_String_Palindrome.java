@@ -4,7 +4,7 @@ public class Solution {
 
 	public static boolean checkPalindrome(String str) {
 	
-// Convert all into lower case
+//Convert all into lower case
     str = str.toLowerCase();
 	str  = str.replaceAll("[^a-zA-Z0-9]","");  
 
