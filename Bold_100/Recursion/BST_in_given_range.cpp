@@ -30,18 +30,18 @@ class Node{
  void BSTIngiven_rang(Node* root,vector<int>&ans){
      
      if(!root){
-         return;
+        return;
      }
      
      if(root->data>l){
-         BSTIngiven_rang(root->left,ans);
+        BSTIngiven_rang(root->left,ans);
      } 
      if(root->data>=l && root->data<=h){
         ans.push_back(root->data);
      }
     
      if(root->data<h){
-         BSTIngiven_rang(root->right,ans);
+        BSTIngiven_rang(root->right,ans);
      }
  }
  
