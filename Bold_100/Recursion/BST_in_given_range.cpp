@@ -20,7 +20,7 @@ class Node{
  void print(Node* root){
      
      if(root == NULL){
-         return;
+        return;
      }
      print(root->left);
      cout<<root->data<<" ";
