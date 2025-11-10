@@ -26,7 +26,7 @@ int main(){
     
  if(num>0){
     ans = factorial(num);
-    cout<<"factorial of "<<num<<" is "<<ans<<endl;
+    cout<<"factorial of "<<num<<"is "<<ans<<endl;
     
     cout<<"Do you want to exit Program or Not  Type (y:yes n:no)";
     cin>>ch;
