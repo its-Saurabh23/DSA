@@ -58,8 +58,6 @@ int main()
     cout<<"Top Element of Array "<<stack.peek()<<"\n";
     stack.pop();
     cout<<"After Poping,top element of stack is "<<stack.peek()<<"\n";
-
-
     return 0;
 }
  
