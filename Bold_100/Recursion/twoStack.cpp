@@ -3,7 +3,6 @@ using namespace std;
 
 class Stack
 {
-
 public:
     int top1;
     int top2;
