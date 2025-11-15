@@ -51,12 +51,6 @@ int main(){
 
 Hero suresh;
 
-
-
-
-
-
-
 //   cout<<"Hii" <<endl;
  
 //  Hero tt;
