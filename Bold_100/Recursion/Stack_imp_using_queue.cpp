@@ -1,31 +1,68 @@
-#include<bits/stdc++.h>
-using namespace std; 
+#include <bits/stdc++.h>
+using namespace std;
 
-class Queue{
-   public:
-   queue<int>q;
+class Stack
+{
+public:
+    queue<int> q;
 
-void push(int val){
-     int size = q.size();
-      for(int i= 0 ; i<size;i++){
+    void push(int val)
+    {
+        q.push(val);
+        int size = q.size();
+
+        for (int i = 0; i < size-1; i++)
+        {
             q.push(q.front());
-                q.pop();
-          }
+            q.pop();
+        }
     }
-int pop(){
-    if(is empty()){
-        cout<<"Stack is overflow";
-               return -1;
-      }
-   
-     int temp = q.front();
-                q.pop();
 
-       return temp;
- }
-   
+    int pop()
+    {
+        if (isEmpty())
+        {
+            std::cout << __throw_runtime_error << "\n";
+            return -1;
+        }
+        int temp = q.front();
+        q.pop();
+        return temp;
+    }
+    int peek(){
+        if(isEmpty()){
+            std::cout<<__throw_runtime_error<<"\n";
+            return -1;
+        }
+        int temp = q.front();
+        return temp;
+    }
+
+    bool isEmpty(){
+        return q.empty();
+    }
+    void display(){
+        while (!q.empty())
+        {   
+            cout<<q.front()<<"\n";
+            q.pop();
+
+        }
+        
+    }
 };
 
-int main(){
+int main()
+{
+    Stack st;
 
+    st.push(10);
+    st.push(11);
+    st.push(12);
+
+    std::cout<<"Top Element "<<st.peek()<<"\n";
+    std::cout<<"Pop operation in stack "<<st.pop()<<"\n";
+    st.display();
+
+    return 0;
 }
