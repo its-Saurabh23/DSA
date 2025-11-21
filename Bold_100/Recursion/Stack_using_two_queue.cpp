@@ -38,16 +38,14 @@ class Stack{
     bool isEmpty(){
         return q1.empty();
     }
-    
-    void display(){
-        if(q1.empty()){
-            std::cout<<"Stack is empty"<<"\n";
-            return;
-        }
-        while (!q1.empty())
-        {
-            std::cout<<q1.front()<<"\n";
-        }
+    queue<int> temp = q1;
+
+    std::cout << "Stack elements (top to bottom):\n";
+
+    while(!temp.empty()){
+        std::cout << temp.front() << "\n";
+        temp.pop();
+     }
     }
 };
 
