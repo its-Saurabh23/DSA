@@ -52,7 +52,7 @@ int main(){
 // bool first4 = (a>=b);
 // cout<<first4<<endl;
 
-int a =0;
+int a = 0;
 cout<<!a<<endl;
 
 
