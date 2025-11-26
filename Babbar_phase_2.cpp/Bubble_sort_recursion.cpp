@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 void sortArray(int *arr,int n){
     // Base case 
 
@@ -20,7 +19,6 @@ void sortArray(int *arr,int n){
 // Recursive Call
 sortArray(arr,n-1);
 }
-
 
 int main(){
 int arr[5]={2,5,1,6,9};
