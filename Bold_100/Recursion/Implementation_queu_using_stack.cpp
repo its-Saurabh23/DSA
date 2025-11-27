@@ -4,7 +4,6 @@ using namespace std;
 
 class Queue
 {
-
 public:
     stack<int> s1, s2;
 
@@ -80,7 +79,6 @@ int main()
     std::cout<<"Delete Element:: "<<q.pop()<<"\n";
     std::cout<<"After deletion display "<<"\n";
     q.display();
-
 
     return 0;
 }
