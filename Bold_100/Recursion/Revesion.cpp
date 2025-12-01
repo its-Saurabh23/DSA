@@ -1,4 +1,3 @@
-
 // Implementation of stack using 2 queue
  
 #include <bits/stdc++.h>
