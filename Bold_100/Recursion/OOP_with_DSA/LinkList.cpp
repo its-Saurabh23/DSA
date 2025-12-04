@@ -34,6 +34,10 @@ class LinkList{
     Node<T>* head;
 
     LinkedList():head(nullptr){}
+
+    void addHose(){
+      
+    }
     
 };
 
