@@ -25,7 +25,6 @@ class Node{
 };
 
 // -------------------- Linke List TEMPLATE --------------------
-
 template <typename T>
 
 class LinkList{
