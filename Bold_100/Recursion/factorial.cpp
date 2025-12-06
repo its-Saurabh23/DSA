@@ -13,10 +13,7 @@ int factorial(int num){
 
 int main(){
     
- int num;
- int ans;
- 
-
+ int num,ans;
  bool flag = false;
  char ch;
  
@@ -50,6 +47,7 @@ int main(){
       return 0;
   }else{
     cout<<"Your value is "<<num<<" This is Negative value"<<endl;
+    return;
   }
  }while(flag);
 
