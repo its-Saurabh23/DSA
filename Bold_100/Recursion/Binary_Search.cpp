@@ -20,8 +20,8 @@ bool BinarySeach(const vector<int>&arr,int start,int end,int target){
 }
 
 int main(){
-    vector<int>arr={1,2,3,4,5,6,7,8,9,10};
-    int target = 4;
+   vector<int>arr={1,2,3,4,5,6,7,8,9,10};
+   int target = 4;
    if(BinarySeach(arr,0,arr.size(),target)){
     cout<<"Element is present "<<"\n";
    }else{
