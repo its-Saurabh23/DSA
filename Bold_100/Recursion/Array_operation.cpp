@@ -22,5 +22,6 @@ int main(){
     // cout<<total<<endl;
     
     // cout<<sum(arr,0,5);
+
     return 0;
 }
