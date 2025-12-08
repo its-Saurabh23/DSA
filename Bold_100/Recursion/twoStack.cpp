@@ -45,6 +45,7 @@ public:
         }
         return arr[top1--];
     }
+
     int pop2()
     {
         if (top2 == size)
