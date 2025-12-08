@@ -4,8 +4,7 @@ using namespace std;
 class Stack
 {
 public:
-    int top1,top2,size;
-    int *arr;
+    int top1,top2,size,*arr;
 
     Stack(int val)
     {   size = val;
