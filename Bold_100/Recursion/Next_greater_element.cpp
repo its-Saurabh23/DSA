@@ -3,6 +3,9 @@ using namespaces std;
 
 int Nextgreate(vector<int>& nums){
 
+vector<int>result;
+
+
 
 }
 int main(){
