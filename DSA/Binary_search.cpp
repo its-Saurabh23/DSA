@@ -9,8 +9,6 @@ int s =0;
 int e =n-1;
 int mid = s +(e-s)/2;
 
-//First Condition will be 
-
 while(s<=e){
 
     if(arr[mid] == target){
@@ -19,7 +17,7 @@ while(s<=e){
 
     //Condition Second 
     if(arr[mid]<target){
-        s =mid+1;
+        s = mid+1;
     }
     else{
         e = mid-1;
