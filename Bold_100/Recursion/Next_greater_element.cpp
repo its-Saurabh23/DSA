@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 vector<int>NextGreaterElement(vector<int>&nums){
     vector<int>result;
     
@@ -9,9 +8,7 @@ vector<int>NextGreaterElement(vector<int>&nums){
         std::cout<<"Empty input"<<"\n";
         return {};
     }
-    
     stack<int>st;
-    
     for(int i = nums.size()-1; i>=0; i--){
         
         while(!st.empty() && st.top() <= nums[i]){
