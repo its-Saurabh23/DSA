@@ -2,7 +2,6 @@
 using namespace std;
 
 // void print(int n,int i){
-
 //     //base case
 //     if(i == n){
 //         cout<<i<<endl;
@@ -22,7 +21,6 @@ void print(int n){
     print(n-1);
     cout<<n<<endl;
 }
-
 int main(){
     int n;
     cout<<"Enter a natural number"<<endl;
