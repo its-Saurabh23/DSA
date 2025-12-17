@@ -1,5 +1,6 @@
 class Solution {
 public:
+
 bool isSafe(int row,int col, vector<vector<char>>&board,char val){
       
   for(int i = 0; i<board.size();i++){
@@ -20,7 +21,6 @@ bool isSafe(int row,int col, vector<vector<char>>&board,char val){
   return true;
 
     }
-
 
  bool solve(vector<vector<char>> &board){
     int n = board.size();
