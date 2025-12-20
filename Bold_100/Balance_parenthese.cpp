@@ -1,11 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool BalanceParenthese(){
-    
+bool BalanceParenthese(string &str){
+    stack<string>st;
 }
 
 int  mian(){
+    char str ="({[[]]})";
+    BalanceParenthese(str);
     return 0;
 }
 
