@@ -3,6 +3,8 @@ using namespace std;
 
 bool BalanceParenthese(string &str){
     stack<string>st;
+    
+    for(int i=0;i<str.length 
 }
 
 int  mian(){
