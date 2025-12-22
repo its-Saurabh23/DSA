@@ -4,7 +4,11 @@ using namespace std;
 bool BalanceParenthese(string &str){
     stack<string>st;
     
-    for(int i=0;i<str.length 
+    for(int i=0;i<str.length ;i ++){
+        if(){
+            
+        }
+    } 
 }
 
 int  mian(){
