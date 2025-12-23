@@ -3,11 +3,11 @@ using namespace std;
 
 bool BalanceParenthese(string &str){
     stack<string>st;
-    
-    for(int i=0;i<str.length ;i ++){
-        if(){
-            
-        }
+      for(char ch : st){
+         if(ch == "(" || ch == "[" || ch =="{"){
+st.push(ch);
+}elseif ()
+      }
     } 
 }
 
