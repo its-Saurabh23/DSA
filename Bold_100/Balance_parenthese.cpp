@@ -3,12 +3,16 @@ using namespace std;
 
 bool BalanceParenthese(string &str){
     stack<string>st;
-      for(char ch : st){
-         if(ch == "(" || ch == "[" || ch =="{"){
-st.push(ch);
-}elseif ()
+     for(char ch:str){
+      if(ch =='(' || ch =='{' || ch =="["){
+        st.push(ch);
+      }else if(ch  ==')' || ch =='}' || ch ==']'){
+            
+        if(st.empty()){
+          return false;
+        }
       }
-    } 
+     }
 }
 
 int  mian(){
