@@ -11,6 +11,8 @@ bool BalanceParenthese(string &str){
         if(st.empty()){
           return false;
         }
+      int top = st.top();
+          st.pop()
       }
      }
 }
