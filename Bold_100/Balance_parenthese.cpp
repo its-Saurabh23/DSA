@@ -12,8 +12,10 @@ bool BalanceParenthese(string &str){
           return false;
         }
       int top = st.top();
-          st.pop()
+          st.pop();
       }
+    
+if((ch=='{' top !== '}') || (ch == '[' top !== ']' )
      }
 }
 
