@@ -15,7 +15,9 @@ bool BalanceParenthese(string &str){
           st.pop();
       }
     
-if((ch=='{' top !== '}') || (ch == '[' top !== ']' )
+if((ch=='{' && top != '}') || (ch == '[' && top != ']' ch == '(' && top != ']'){ 
+   return true;
+   }
      }
 }
 
