@@ -16,8 +16,9 @@ bool BalanceParenthese(string &str){
       }
     
 if((ch=='{' && top != '}') || (ch == '[' && top != ']' ch == '(' && top != ']'){ 
-   return true;
+   return false;
    }
+    return st.empty();
      }
 }
 
