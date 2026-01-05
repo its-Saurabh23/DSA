@@ -14,7 +14,7 @@ int kanpsnack(vector<int>&wt,vector<int>&arr,int W,int n){
     }
     else  if(wt[n-1]<=w){
         // 2 case pick or non pick
-        return max(val[n-1], knapsack (wt,are,w-are[n-1],n-1), knapsack (wt,are,w,n-1);
+        return max(val[n-1], knapsack (wt,are,w-arr[n-1],n-1),knapsack (wt,are,w,n-1);
     }
 }
 
