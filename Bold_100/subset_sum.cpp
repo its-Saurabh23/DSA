@@ -10,9 +10,13 @@ bool subSetSum(vector<int>&arr,int sum,int n){
         return false;
     }
 
-    if(){
-
+    if(arr[n-1]>sum){
+      return subsetsum(are,sum,n-1);
     }
+      
+    else if(are[n-1]<=sum){
+      return subsetsum(arr,sum-arr[n-1],n-1) || subsetsum(arr,sum,n-1);
+     }
 }
 
 int main(){
