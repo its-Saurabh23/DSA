@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int subSetSum(vector<int>&arr,int m int sum){
+bool subSetSum(vector<int>&arr,int n int sum){
     if(n == 0){
       return 0;
     }
@@ -9,18 +9,29 @@ int subSetSum(vector<int>&arr,int m int sum){
        return 1;
     }
 
-    // 
+    if(are[n-1] >= sum){
+      return subsetsum(arr,n-1,sum);
+     }
+
+    return subsetsum(arr,n-1,sum-arr[n-1]) ||subsetsum(arr,n-1,sum);
 }
 
 int solve(vector<int>&arr){
   
-    int n = ar.size();
+    int n = arr.size();
     int sum = 0;
-    for(int i  = 0;i <n; i++)}{
+    for(int i  = 0;i <n/2; i++)}{
         sum += arr[i];
     }
 
-    subSetSum(arr,n,sum);
+    for(int i=0;i<sum/2;i++){
+
+       if(subSetSum(arr,n,sum)){
+         mini = min(mini,2*arr[i];
+       }
+
+    }
+return mini;
 
 }
 
