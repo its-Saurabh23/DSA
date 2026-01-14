@@ -1,42 +1,43 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool subSetSum(vector<int>&arr,int n int sum){
-    if(n == 0){
-      return 0;
-    }
-    if(sum == 0){
-       return 1;
-    }
-
-    if(are[n-1] >= sum){
-      return subsetsum(arr,n-1,sum);
+bool isSubsetSum(vector<int>&arr,int n,int sum){
+      if(sum == 0){
+         return true;
+     }
+     
+     if(n == 0){
+         return false;
      }
 
-    return subsetsum(arr,n-1,sum-arr[n-1]) ||subsetsum(arr,n-1,sum);
-}
+     if(sum<arr[n-1]){
+        return isSubsetSum(arr,n-1,sum); 
+     }
+     return isSubsetSum(arr,n-1,sum -arr[n-1]) || isSubsetSum(arr,n-1,sum);
+} 
 
-int solve(vector<int>&arr){
-  
+void minimumDiff(vector<int>&arr){
+    
+    int range = 0;
     int n = arr.size();
-    int sum = 0;
-    for(int i  = 0;i <n/2; i++)}{
-        sum += arr[i];
+    
+    for(int i = 0; i<arr.size(); i++){
+        range = range + arr[i];
     }
-
-    for(int i=0;i<sum/2;i++){
-
-       if(subSetSum(arr,n,sum)){
-         mini = min(mini,2*arr[i];
-       }
-
+    
+    int mini = INT_MAX;
+    for(int i = 0; i<=range/2; i++){
+        
+        if(isSubsetSum(arr,n,i)){
+            mini = min(mini,range - 2*i);
+        }
     }
-return mini;
-
+    std::cout << mini << std::endl;
 }
 
 int main(){
-  vector<int>arr={1, 6, 11, 5};
-  solve(arr);
+    std::vector<int>arr={1, 6, 11, 5};
+    
+    minimumDiff(arr);
     return 0;
 }
