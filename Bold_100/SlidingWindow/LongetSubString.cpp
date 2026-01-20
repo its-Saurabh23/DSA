@@ -2,6 +2,7 @@
 using namespace std;
  
 int solve(string & str){
+  
       if(str.length() == 0){
         return 0;  
       }
