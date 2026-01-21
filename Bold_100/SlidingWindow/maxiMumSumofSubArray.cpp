@@ -28,3 +28,44 @@
      std::cout << result << std::endl;
      return 0;
  }
+
+ /******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include <bits/stdc++.h>
+using namespace std;
+
+int solve(vector<int>&arr,int k){
+    
+    if(arr.size()<0){
+        return 0;
+    }
+    
+    int maxSum = INT_MIN;
+    int currentSum = 0;
+    for(int i = 0 ;i<arr.size(); i++){
+        
+        currentSum += arr[i];
+        if(i>=k-1){
+            maxSum = max(maxSum,currentSum);
+            //update the current Sum;
+            currentSum -= arr[i-(k-1)];
+        }
+    }
+    return maxSum;
+}
+
+int main()
+{
+   vector<int>arr={4,2,1,7,8,1,2,10};
+   int k = 3;
+   int result = solve(arr,k);
+   cout<<result
+;
+   
+    return 0;
+}
