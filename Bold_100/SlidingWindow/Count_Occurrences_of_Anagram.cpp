@@ -15,7 +15,9 @@ bool isAnagram(string &str, string &word){
    return true;
 
 }
-int solve(){
+int solve(string &text, string &word){
+
+  string str = "";
     
 }
 int main(){
