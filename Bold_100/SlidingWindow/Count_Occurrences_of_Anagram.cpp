@@ -18,6 +18,21 @@ bool isAnagram(string &str, string &word){
 int solve(string &text, string &word){
 
   string str = "";
+  int start = 0;
+  int len = word.length();
+  int count= 0;
+
+  for(int i = 0; i<text.length(); i++;){
+         str += text[i];
+        if(i-strat +1 == len ){
+            if((str,word)){
+              count++;
+              start++;
+             }
+            str = str - str[i-start-1];
+          }
+      
+     }
     
 }
 int main(){
