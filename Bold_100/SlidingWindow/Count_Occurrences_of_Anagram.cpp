@@ -35,7 +35,7 @@ int solve(string &text, string &word) {
             if (isAnagram(str, word)) {
                 count++;
             }
-            str.erase(0, 1);  // remove first char
+            str.erase(0, 1);
             start++;
         }
     }
