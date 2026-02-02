@@ -1,7 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+int solve(){}
+
+
 int main(){
+  string str = 
 
   return 0;
  }
