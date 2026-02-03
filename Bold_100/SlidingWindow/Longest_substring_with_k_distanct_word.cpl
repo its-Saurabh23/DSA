@@ -1,11 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int solve(){}
+int solve(string str, string word){}
 
 
 int main(){
-  string str = 
+  string str = "";
+  string word= "";
+  solve(str, word);
+  
 
   return 0;
  }
