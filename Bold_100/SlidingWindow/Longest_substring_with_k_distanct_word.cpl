@@ -1,7 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int solve(string str, string word){}
+int solve(string str, string word){
+   int wordLength = word.length();
+  
+}
 
 
 int main(){
