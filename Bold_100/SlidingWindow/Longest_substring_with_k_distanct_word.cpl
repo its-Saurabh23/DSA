@@ -5,7 +5,10 @@ int solve(string str, string word){
    int wordLength = word.length();
    unordered_map<int,char>freq;
     
-   for(int i = 0; i<str.size();i++){}
+   for(int i = 0; i<str.size();i++){
+         freq
+     while()
+    }
   
 }
 
