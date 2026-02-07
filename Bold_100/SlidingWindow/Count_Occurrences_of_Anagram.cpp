@@ -37,12 +37,14 @@ int solve(string &text, string &word) {
             }
             str.erase(0, 1);
             start++;
-        }
+        }   
     }
     return count;
 }
 
 int main() {
+    
+// count of occurrences of the anagrams
     string text = "gotxxotogatog";
     string word = "got";
 
