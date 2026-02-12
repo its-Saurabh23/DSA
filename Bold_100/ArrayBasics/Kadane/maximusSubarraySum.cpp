@@ -51,7 +51,7 @@ int solve(vector<int>&arr){
 int main(){
 
     // vector<int>arr ={1,2,-3,1,10,-11};
-    vector<int>arr ={2, -1, 3, -2 }; // for prining example use this.
+    vector<int>arr ={2, -1, 3, -2 }; // for priting example use this.
     int result  solve(arr);
     std::cout << result << std::endl;
     return 0;
