@@ -2,6 +2,7 @@
 using namespace std;
 
 // When solving partition problems ask:
+
 // How many regions?
 // Is order important?
 // One pass or multiple pass?
