@@ -6,8 +6,7 @@ using namespace std;
 // How many regions?
 // Is order important?
 // One pass or multiple pass?
-// In-place required?
-// These 4 questions guide pointer
+// In-place required?
 
 void sortZeroAndOne(vector<int>&arr){
     int n = arr.size();
