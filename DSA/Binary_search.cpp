@@ -32,6 +32,6 @@ int target = 9;
 int arr[5]={1,2,5,6,15};
 
 int Result = BinarySearch(arr,5 ,target);
-cout<<"Index of Target Value is = "<<Result<<endl;
+cout<<"Index of Target Value is = "<<Result;
 return 0;
 }
