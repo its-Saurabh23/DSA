@@ -2,6 +2,9 @@
 using namespace std;
 
 int CountSubarrayshavingSumK(vector<int>&arr,int k){
+ unordered_map<int,int>freq;
+
+  for(){}
    
 } 
 
