@@ -21,7 +21,7 @@ int findEquilibriumIndex(vector<int>&arr){
 }
 
 int main() {
-    // Write C++ code here
+
     std::cout << "Try programiz.pro"<<"\n";
     vector<int>arr={-7, 1, 5, 2, -4, 3, 0};
     int result = findEquilibriumIndex(arr);
