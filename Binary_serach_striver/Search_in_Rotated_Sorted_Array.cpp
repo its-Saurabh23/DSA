@@ -46,7 +46,7 @@ public:
            
           if(nums[mid] == target)
           return mid;
-        //   left sorted      
+        //left sorted      
           else if(nums[mid]>= nums[0]){
               if(nums[start]<= target && nums[mid]>= target){
                   end = mid - 1;
@@ -55,7 +55,7 @@ public:
                   start = mid + 1;
               }
           }
-        //   Right sorted
+        //Right sorted
           else{
               if(nums[mid]<= target && nums[end] >= target){
                   start = mid + 1;
