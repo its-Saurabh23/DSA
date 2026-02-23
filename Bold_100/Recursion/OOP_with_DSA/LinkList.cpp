@@ -12,8 +12,7 @@ class House{
     : owner(o),address(a),rooms(r){}
   }
 };
-
-// -------------------- NODE TEMPLATE --------------------
+
  
 template<typename T>
 
@@ -24,7 +23,6 @@ class Node{
      Node(T d): data(d),next(nullptr) {}
 };
 
-// -------------------- Linke List TEMPLATE --------------------
 template <typename T>
 
 class LinkList{
