@@ -9,15 +9,11 @@ int solve(string str, string word){
          freq
      while()
     }
-  
 }
-
 
 int main(){
   string str = "";
   string word= "";
   solve(str, word);
-  
-
   return 0;
  }
