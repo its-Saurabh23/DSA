@@ -8,7 +8,7 @@ int kanpsnack(vector<int>&wt,vector<int>&arr,int W,int n){
        return 0;
     }
 
-    //choice Diagram
+    //choice 
     if(wt[n-1]>w){
     return kanpsnack(wt,arr,w,n-1);
     }
