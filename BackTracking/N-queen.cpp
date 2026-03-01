@@ -15,8 +15,8 @@ bool isSafe(int row,int col,vector<string>&board,int n){
 
     x = row;
     y = col;
-    // check for diagonal
 
+    // check for diagonal
     while(x>=0 && y>=0){
      if(board[x][y] == 'Q'){
          return false;
@@ -27,8 +27,8 @@ bool isSafe(int row,int col,vector<string>&board,int n){
 
     x = row;
     y = col;
-    // check for diagonal
 
+    // check for diagonal
     while(x<n && y>=0){
      if(board[x][y] == 'Q'){
         return false;
@@ -60,7 +60,7 @@ bool isSafe(int row,int col,vector<string>&board,int n){
         }
     }
     
-    vector<vector<string>> solveNQueens(int n) {
+    vector<vector<string>>solveNQueens(int n) {
          vector<string> board(n, string(n, '.'));
         vector<vector<string>> ans;
 
