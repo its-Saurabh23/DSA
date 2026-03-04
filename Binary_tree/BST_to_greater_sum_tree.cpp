@@ -9,11 +9,8 @@ class Solution
         if(root == NULL){
             return;
         }
-        // Reverse inorder
         
         InorderTraversal(root->right,sum);
-        
-        
         int currentSum = root->data;
         root->data =  sum;
         sum = sum + currentSum;
