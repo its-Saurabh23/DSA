@@ -5,7 +5,6 @@ int binarySearch(int arr[],int low,int heigh,int target){
     }
 
     int mid = low + (heigh-low)/2;
-    
     if(arr[mid] == target){
         return mid;
     }
@@ -18,13 +17,11 @@ int binarySearch(int arr[],int low,int heigh,int target){
 }
 
 int binarySearch(int arr[],int n,int target){
-    
     int low = 0;
     int heigh = n -1; 
     
     while(low <= heigh){
         int mid = low + (heigh-low)/2;
-        
         if(arr[mid] == target ){
             return mid;
         }
