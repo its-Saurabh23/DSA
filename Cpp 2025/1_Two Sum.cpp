@@ -8,8 +8,7 @@ public:
         for(int i = 0; i<n; i++){
 
             int ans =  target - nums[i];
-            if(mp.find(ans) != mp.end()){
-
+            if(mp.find(ans) != mp.end()){
               return{mp[ans],i};
             }
 
