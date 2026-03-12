@@ -18,10 +18,13 @@ int partition(int arr[],int low,int heigh){
     return i+1;
 }
 void quickSort(int arr[],int low,int heigh){
-    if(low<heigh){
+    
+if(low<heigh){
+
         int pi = partition(arr,low,heigh);
         quickSort(arr,low,pi-1);
         quickSort(arr,pi+1,heigh);
+
     }
 }
 int main()
