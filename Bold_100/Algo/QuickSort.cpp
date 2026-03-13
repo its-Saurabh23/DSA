@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -14,11 +13,12 @@ int partition(int arr[],int low,int heigh){
             swap(arr[i],arr[j]);
         }
     }
+    
     swap(arr[i+1],arr[heigh]);
     return i+1;
 }
-void quickSort(int arr[],int low,int heigh){
-    
+
+void quickSort(int arr[],int low,int heigh){    
 if(low<heigh){
 
         int pi = partition(arr,low,heigh);
@@ -37,4 +37,5 @@ int main()
         std::cout << it<<" ";
     }
     return 0;
+
 }
