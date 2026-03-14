@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 class Node{
   
   public:
@@ -36,8 +35,6 @@ class Node{
   }
   
 };
-
-
 
 int main(){
    
