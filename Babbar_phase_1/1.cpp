@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
+
 int main(){
+
 // cout<<"Namaste  duniya";
 // cout<<"\n";
 //     int a = 123;
@@ -54,6 +56,4 @@ int main(){
 
 int a = 0;
 cout<<!a<<endl;
-
-
 }
