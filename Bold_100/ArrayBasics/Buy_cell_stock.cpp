@@ -13,13 +13,13 @@ using namespace std;
 //             if(profit>maxProfit){
 //                 maxProfit = profit;
 //             }
+//   Above line can be replace by min funvtion
 //         }
 //     }
 //     return maxProfit;
 // } 
 
 // O(n)
-
 int BestTimeToBuyCellStock(vector<int>&arr){
     
     int buy =arr[0];
