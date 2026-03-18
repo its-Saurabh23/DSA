@@ -6,7 +6,8 @@ using namespace std;
 // How many regions?
 // Is order important?
 // One pass or multiple pass?
-// In-place required?
+// In-place required?
+
 
 void sortZeroAndOne(vector<int>&arr){
     int n = arr.size();
@@ -29,6 +30,24 @@ void sortZeroAndOne(vector<int>&arr){
         }else{
             swap(arr[mid],arr[high]);     // third resign
             high--;
+        }
+    }
+}
+
+void SortZerosOnces(vector<int>&arr){
+    int low = 0;
+    int end = arr.size()-1;
+    int mid = 0;
+    
+    while(mid<=end){
+        
+        if(arr[mid] == 0){ 
+        swap(arr[low++],arr[mid++]);
+            
+        }else if(arr[mid] == 1){
+            mid++;
+        }else{
+            swap(arr[mid],arr[end--]);
         }
     }
 }
