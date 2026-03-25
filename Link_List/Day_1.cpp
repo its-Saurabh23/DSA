@@ -5,7 +5,6 @@ class Node{
 public:
 int data;
 Node* next;
-// constructor  
 
 Node(int data){
 this->data = data;
@@ -15,7 +14,6 @@ this->next = NULL;
 // Destructor 
 ~Node(){
     int value = this->data;
-    // memory free..
     if(this->next != NULL){
         delete next;
         this->next  = NULL;
@@ -26,7 +24,6 @@ this->next = NULL;
 };
 
 void insertHead(Node* &head,int d){
-    // New node create 
     Node* temp = new Node(d);
     temp->next = head;
     head = temp;
@@ -62,7 +59,7 @@ void InsertAtPosition(Node* &head,int positon,int d){
         cnt++;
     }
 
-    // creating a node for d
+    // creating a node for d input data 
     Node* nodeToInsert = new Node (d);
     nodeToInsert ->next = temp->next;
     temp->next = nodeToInsert;
