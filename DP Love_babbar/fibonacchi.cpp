@@ -10,6 +10,7 @@ int fib(int n){
 }
 
 // Top Down appoarch recusion + memoisation 
+
 #include<bits/stdc++.h>
 using namespace std;
 int fib(int n,vector<int>&dp){
@@ -44,10 +45,7 @@ int main()
 
 // T.C = O(n)
 // S.c = dp array  O(n) +   o(n)// depth of the recursion
-
-
-
-// Tabulation method.  But need the space optimization.
+// Tabulation method.But need the space optimization.
 
 #include<bits/stdc++.h>
 using namespace std;
