@@ -73,6 +73,50 @@ class LinkList {
        }
        cout<<" NULL";
    }
+
+void loopdetch(Node* head){
+    if(head == NULL){
+        std::cout << "List is empty " << std::endl;
+        return;
+    }
+    
+    Node* slow = head;
+    Node* fast = head;
+    
+    bool isLoopFount = false;
+    
+    while(fast != NULL && fast->next != NULL){
+        slow = slow->next;
+        fast = fast->next->next;
+        
+        if(slow == fast){
+            isLoopFount = true;
+            break;
+        }
+    }
+    if(!isLoopFount){
+        cout<<"No loop found \n";
+        return;
+    }
+    
+    // finding that node where loop exit 
+    slow = head;
+    
+    while(slow != fast){
+        slow = slow->next;
+        fast  = fast->next;
+    }
+    cout<<"Loop start at: "<<slow->data<<"\n";
+    
+    // removing loop
+    
+    Node* temp = slow;
+    while(temp->next != slow){
+          temp = temp->next;
+    }
+    temp->next = NULL;
+}
+
    
 };
 
