@@ -7,7 +7,6 @@ int main()
     int n = 5;
     for (int i = 1; i <= n; i++)
     {
-
         //   first triangle
         int cnt = 1;
         for (int j = 0; j <= n - i; j++)
@@ -86,7 +85,6 @@ int main()
         cout << endl;
     }
 
-
     //  row ke liye
     for (int i = 0; i <= n; i++)
     {
@@ -102,8 +100,6 @@ int main()
         }
         cout << endl;
     }
-
-
 
         for (int i = 1; i <= n; i++)
         {
