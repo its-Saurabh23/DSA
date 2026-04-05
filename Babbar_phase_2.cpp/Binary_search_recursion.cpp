@@ -8,8 +8,6 @@ void print(int arr[],int s,int e){
     cout<<endl;
 }
 
-
- 
 bool binarySearch(int arr[],int s,int e,int k){
     cout<<endl;
     print(arr,s,e);
@@ -30,7 +28,6 @@ bool binarySearch(int arr[],int s,int e,int k){
 
      return binarySearch(arr,mid+1,e,k);
     }
-
     else{
         return binarySearch(arr,s,mid-1,k);
     }
