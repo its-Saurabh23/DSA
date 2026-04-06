@@ -29,3 +29,71 @@ else{
 }
 return 0;
 }
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Qu {
+public:
+    int *arr;
+    int front, rear, size;
+
+    // Constructor
+    Qu(int s) {
+        size = s;
+        arr = new int[s];
+        front = 0;
+        rear = -1;
+    }
+
+    // Enqueue
+    void enQ(int val) {
+        if (rear == size - 1) {
+            cout << "Queue is full" << endl;
+            return;
+        }
+        rear++;
+        arr[rear] = val;
+        cout << val << " inserted" << endl;
+    }
+
+    // Dequeue
+    void deQ() {
+        if (front > rear) {
+            cout << "Queue is empty" << endl;
+            return;
+        }
+        cout << arr[front] << " removed" << endl;
+        front++;
+    }
+
+    // Display
+    void display() {
+        if (front > rear) {
+            cout << "Queue is empty" << endl;
+            return;
+        }
+
+        for (int i = front; i <= rear; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    Qu q(5);
+
+    q.enQ(10);
+    q.enQ(20);
+    q.enQ(30);
+
+    q.display();
+
+    q.deQ();
+    q.display();
+
+    return 0;
+}
