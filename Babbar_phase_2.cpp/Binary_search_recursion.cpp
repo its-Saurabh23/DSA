@@ -11,7 +11,9 @@ void print(int arr[],int s,int e){
 bool binarySearch(int arr[],int s,int e,int k){
     cout<<endl;
     print(arr,s,e);
-    //  base case 
+  
+
+
     //   element not found;
     if(s>e){
         return false;
