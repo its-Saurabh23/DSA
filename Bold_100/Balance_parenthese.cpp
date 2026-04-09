@@ -18,12 +18,15 @@ bool BalanceParenthese(string &str){
 if((ch=='{' && top != '}') || (ch == '[' && top != ']' ch == '(' && top != ']'){ 
    return false;
    }
+
     return st.empty();
      }
 }
 
 int  mian(){
+
     char str ="({[[]]})";
+
     BalanceParenthese(str);
     return 0;
 }
