@@ -13,7 +13,7 @@ if(size == 1){
     return arr[0];
 }
 
-// R R
+
 int sum = arr[0] + getSum(arr+1, size-1);
 return sum;
 
