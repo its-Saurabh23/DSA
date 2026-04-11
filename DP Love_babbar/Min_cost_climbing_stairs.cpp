@@ -23,8 +23,6 @@ public:
 };
 
 // DP + Memoaization  This include exta space.
-// T.C = O(n)
-//S.C = O(n) +O(n)
 class Solution {
 public:
     int solve(vector<int>&cost,int n,vector<int>&dp){
