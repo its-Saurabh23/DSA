@@ -3,7 +3,6 @@ using namespace std;
 
 bool BalanceParenthese(string &str){
     stack<char> st;
-
     for(char ch : str){
         if(ch == '(' || ch == '{' || ch == '['){
             st.push(ch);
@@ -15,7 +14,6 @@ bool BalanceParenthese(string &str){
 
             char top = st.top();
             st.pop();
-
             // matching check
             if((ch == ')' && top != '(') ||
                (ch == '}' && top != '{') ||
