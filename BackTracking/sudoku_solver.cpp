@@ -4,7 +4,6 @@ public:
 bool isSafe(int row,int col, vector<vector<char>>&board,char val){
       
   for(int i = 0; i<board.size();i++){
-
     // row 
      if(board[row][i] == val){
          return false;
@@ -33,7 +32,7 @@ bool isSafe(int row,int col, vector<vector<char>>&board,char val){
             for(char val = '1'; val<='9';val++){
                 if(isSafe(i,j,board,val)){
                     board[i][j]= val;
-                    //  recusion for rest of the thing
+                    //recusion for rest of the thing
                     bool nextAns = solve(board);
                     if(nextAns){
                         return true;
