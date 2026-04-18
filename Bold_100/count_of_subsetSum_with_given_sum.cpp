@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int t[1001][1001];   // DP table
+int t[1001][1001];   // D.P table
 
 int CountofSubsetSum(vector<int> &arr, int sum, int n) {
     // Base cases
