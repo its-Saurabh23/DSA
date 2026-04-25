@@ -3,7 +3,12 @@ using namespace std;
 
 void twoSum(int n, vector<int>&nums,int Target,int i){
 
-   
+      for(int = 0;i<n;i++){
+        if(){
+          
+           }
+
+      }
    }
 
 vector threeSum(vector<int>&nums){
