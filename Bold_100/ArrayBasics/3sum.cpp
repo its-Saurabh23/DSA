@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void twoSum(int n, vector<int>&nums,int Target,int i){
+void twoSum(int n, vector<int>&nums,int Target,int start){
 
       for(int = 0;i<n;i++){
-        if(){
-          
+        if(nums[i]+nums[start]>Target){
+          j--;
            }
 
       }
