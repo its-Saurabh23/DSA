@@ -1,25 +1,44 @@
-#include<bits/stdc++.h>
-using namespace std;
+class Solution {
+public:
+    void twoSum(vector<int>&nums,int start,int end,int target,vector<vector<int>>&result){
+       
+       while(start<end){
 
-void twoSum(int j, vector<int>&nums,int Target,int i){
+       int sum  = nums[start] + nums[end];
+       
+       if(sum>target){
+          end--;
+       }else if(sum <target){
+            start++;
+       }else{
+            result.push_back({-target,nums[start],nums[end]});
+            
+            while(start <end && nums[start] == nums[start+1])start++;
+            while(start <end && nums[end] == nums[end-1])end--;
 
-      while(i<j){
-       if(nums[i]+nums[j]>Target){
-           j--;
-          }
+            start++;
+            end--;  
        }
-   }
+     }
+    }
+    
 
-vector threeSum(vector<int>&nums){
-   int n = nums.size();
-   
-for(int i= 0; i<n-2;i++){
+    vector<vector<int>> threeSum(vector<int>& nums) {
+      int n = nums.size();
+      if(n<3){
+        return{};
+      } 
 
-      int n = nums[i];
-      int Target=-n2;
-        twoSum(n-1,nums, Target,i+1);
-     } 
- }
-int main(){
-  return 0;
-  }
+      vector<vector<int>>result;
+      sort(nums.begin(),nums.end());
+
+      for(int i = 0;i<n-2; i++){
+           if(i >0 && nums[i] == nums[i-1]){
+            continue;
+           }
+           int target = -nums[i];
+           twoSum(nums, i+1,n-1,target,result);
+      }
+      return result;
+    } 
+};
