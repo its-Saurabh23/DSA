@@ -21,8 +21,10 @@ void print(vector<int>&arr){
            tempIndex = i + 1;
        }
    }
+
    cout<<"Maximum Sum is "<<maxiMumSum<<"\n";
    cout<<"Subarray of Maximum sum"<<"\n[";
+
    for(int i = startIndex; i<=endingIndex; i++){
        if(i == endingIndex){
            cout<<arr[i];
