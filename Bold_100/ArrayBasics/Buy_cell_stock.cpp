@@ -2,8 +2,7 @@
 using namespace std;
 
 // O (n*n)
-// int BestTimeToBuyCellStock(vector<int>&arr){
-    
+// int BestTimeToBuyCellStock(vector<int>&arr){
 //     int maxProfit = 0;
 //     int n = arr.size();
     
@@ -20,12 +19,13 @@ using namespace std;
 // } 
 
 // O(n)
+
 int BestTimeToBuyCellStock(vector<int>&arr){
     
-    int buy =arr[0];
+    int buy = arr[0];
     int max_profit = 0;
 
-    for(int i = 0;i<arr.size(); i++){
+    for(int i = 0; i<arr.size(); i++){
         
         if(buy>arr[i]){
             buy = arr[i];
