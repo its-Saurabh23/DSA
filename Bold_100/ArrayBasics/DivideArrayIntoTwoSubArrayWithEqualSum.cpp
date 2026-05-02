@@ -2,7 +2,9 @@
 using namespace std;
 
 bool isDivisble(vector<int>& arr){
+
     int n = arr.size();
+
      if(n == 0){
         return false; 
      }
