@@ -10,7 +10,9 @@ public class Main
         {true,true,true},
         {true,true,true}
     };
+
     //  allPath("",board,0,0);
+
     int [][] path = new int[board.length][board[0].length];
     
        allPathPrint("",board,0,0,path,1);
@@ -47,9 +49,6 @@ public static void allPath(String p, boolean[][]maze,int r,int c){
     
     maze[r][c] = true;
 }
-
-
-
 
 	
 public static void allPathPrint(String p, boolean[][]maze,int r,int c,int path[][],int step){
