@@ -48,12 +48,14 @@ public class Main
     // checking the conditon of row and colum;
     if (r > 1)
       {
+
 	// recursive call
 	list.addAll (pathRet (p + "D", r - 1, c));
       }
 
     if (c > 1)
       {
+
 	// recusive call
 	list.addAll (pathRet (p + "R", r, c - 1));
       }
