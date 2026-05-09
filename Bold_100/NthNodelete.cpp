@@ -13,7 +13,7 @@ Node* NthNodefromEnd(Node* head,int n){
         temp = temp->next;
     }
     
-    int m = (size-n) // 4-2 = 2;
+    int m = (size-n)
     
     temp = head;
     for(int i = 0; i<m; i++){
