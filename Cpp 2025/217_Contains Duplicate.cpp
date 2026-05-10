@@ -7,7 +7,7 @@ public:
         for(int i = 0; i<n-1; i++){
             for(int j = 1; j<n; j++){
                 if(i != j){
-                  if(nums[i] == nums[j])return true;
+                  if(nums[i] == nums[j]) return true 
                 }
             }
         }
