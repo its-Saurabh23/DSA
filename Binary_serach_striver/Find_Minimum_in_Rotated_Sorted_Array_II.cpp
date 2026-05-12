@@ -2,10 +2,11 @@
 // Think about the mid and last element comparsion and take decesion 
 
 class Solution {
+
 public:
     int findMin(vector<int>& nums) {
         int l = 0;
-        int h =nums.size()-1;
+        int h = nums.size()-1;
 
         while(l<h){
             int mid = l+(h-l)/2;
