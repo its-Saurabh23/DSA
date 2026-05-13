@@ -3,15 +3,18 @@
 using namespace std;
 
 int MaximumSubArray(int arr[],int n){
+
 	    int max = arr[0];
 	    int min = arr [0];
 	    int res = arr [0];
 	    for(int i =0; i<n; i++){
 	        if(arr[i] == 0);{
+
 	            max =1;
 	            min =1;
 	            continue;
 	        }
+
 	        int temp1 = arr[i]*max;
 	        int temp2 =arr[i]*min;
 	        max = math.max(temp1,temp2);
