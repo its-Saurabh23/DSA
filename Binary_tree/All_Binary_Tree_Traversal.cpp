@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+ii#include<bits/stdc++.h>
 using namespace std;
 
 class BinaryTree{
@@ -157,6 +157,7 @@ void postOrderTraversalItrativeWay(BinaryTree * root){
     
     BinaryTree *temp = s1.top();
     s1.pop();
+
     // push into s2
     s2.push(temp);
     
@@ -256,5 +257,6 @@ int main(){
   // postOrderTraversalItrativeWay(root);
   // inOrderTraversalItrativeWay(root);
   // morriesInOrderTraversal(root);
+
   return 0;
 }
