@@ -15,10 +15,11 @@ Node* NthNodefromEnd(Node* head,int n){
     
     int m = (size-n)
     
-    temp = head;
+    temp= head;
     for(int i = 0; i<m; i++){
         temp = temp->next;
     }
+
     return temp;
 }
 
