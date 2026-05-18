@@ -57,4 +57,64 @@ int main(){
 // 2->   1,3,
 // 1->   0,2,3,
 // 0->   1,4,
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+class Graph{
+    
+    public:
+    unordered_map<int ,list<int>>adj;
+    
+    void add(int u,int v,bool direction){
+      
+    //  direction == 0 undirected graph 
+    // direction == 1  directed graph 
+    
+      adj[u].push_back(v);
+    
+      if(direction == 0){
+          adj[v].push_back(u);
+      }
+    }
+    
+    void print(int n){
+        
+        for(int i =1; i<=n; i++){
+            cout<<i <<" -> ";
+            for(auto j:adj[i]){
+                cout << j <<", ";
+            }cout<<endl;
+        }
+    }
+};
+
+int main(){
+    
+    // Number of nodes 
+    int n;
+    cout<<"Enter the number of nodes"<<endl;
+    cin>>n;
+    
+    
+    // Number of edges 
+    int m;
+    cout<<"Enter the number of Eges"<<endl;
+    cin>>m;
+    
+    Graph g;
+    
+    for(int i= 0;i<m; i++){ 
+        
+        int u,v;
+        cin>>u>>v;
+        
+        g.add(u,v,1);
+    }
+    g.print(n);
+    return 0;
+    
+}
              
