@@ -115,6 +115,36 @@ int main(){
     }
     g.print(n);
     return 0;
+}
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
     
+    int vertex,edge;
+    cin>>vertex>>edge;
+    
+    vector<vector<bool>>adj(vertex,vector<bool>(vertex,0));
+    
+    int u,v;
+    for(int i =0;i<edge; i++){
+        
+        cin>>u>>v;
+        adj[u][v] = 1;
+        adj[v][u] = 1;
+    }
+    
+    
+    cout<<"Printing\n\n";
+    
+    for(int i = 0 ; i<vertex; i++){
+        for(int j =0; j<vertex; j++){
+            cout<<adj[i][j] <<" ";
+        }cout<<endl;
+    }
+    
+    return 0;
 }
              
