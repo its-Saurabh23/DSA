@@ -16,27 +16,6 @@ int main(){
 
 char c[5]={'a','b','c','d'};
 cout<<c[3];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 //     int n = 15;
 // int third[15] ={2,7};
 //     // int n= 10;
@@ -72,17 +51,7 @@ cout<<c[3];
 //     cout<<fouth[i]<<" "<<endl;
 // }
 
-
-
 // cout<<"Everything is Fine "<<endl;
-
-
-
-
-
-
-
-
 
     return 0;
 }
