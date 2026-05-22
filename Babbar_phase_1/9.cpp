@@ -16,9 +16,10 @@ int main(){
 
 char c[5]={'a','b','c','d'};
 cout<<c[3];
-//     int n = 15;
+
+// int n = 15;
 // int third[15] ={2,7};
-//     // int n= 10;
+// int n= 10;
 // int fouth[10] ={0};
 // printArray(third,15);
 
