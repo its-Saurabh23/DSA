@@ -254,3 +254,135 @@ int main()
 levelorderTraqversal(root);
   */
 
+ #include<bits/stdc++.h>
+ using namespace std;
+ 
+//  Binary Tree;
+
+ class Node{
+     
+     public:
+     int data;
+     Node* left;
+     Node* right;
+     
+     Node(int d){
+        data = d;
+        left = NULL;
+        right = NULL;
+     }
+ };
+ 
+
+ void priOrderTraversal (Node* root){
+     
+     if(root == NULL ){
+         return;
+     }
+     std::cout << root->data<<" ";
+     priOrderTraversal(root->left);
+     priOrderTraversal(root->right);
+}
+
+
+void  InorderTraversal(Node* root){
+    if(root == NULL){
+        return;
+    }
+    
+    InorderTraversal(root->left);
+    cout<<root->data<<" ";
+    InorderTraversal(root->right);
+}
+
+
+void leveOrderTraversal(Node* root){
+    if(root == NULL){
+        cout<<"Tree is empty"<<endl;
+        return;
+    }
+    
+    std::queue<Node*>q;
+    q.push(root);
+    while(!q.empty()){
+        
+        Node*temp = q.front();
+        q.pop();
+        
+        cout<<temp->data <<" ";
+        
+        if(temp->left != NULL){
+            q.push(temp->left);
+        }
+        if(temp->right != NULL){
+            q.push(temp->right);
+        }
+    }
+}
+
+void zigZagTraversal(Node* root){
+    
+    if(root == NULL){
+        std::cout << "Tree is emplty" << std::endl;
+        return;
+    }
+    
+    queue<Node*>q;
+    bool leftToRight = true;
+    
+    q.push(root);
+    
+    while(!q.empty()){
+    int size = q.size();
+    std::vector<int>ans(size);  // level Wise
+
+        for(int i = 0; i<size; i++){
+            Node * temp = q.front();
+            q.pop();
+
+            int index; 
+            if(leftToRight){
+                index = i;
+            }else{
+                index = size-i-1;
+            }
+            ans[index] = temp->data;
+            
+            if(temp->left != NULL){
+                q.push(temp->left);
+            }
+            if(temp->right){
+                q.push(temp->right);
+            }
+        }
+        
+        for(auto it :ans){
+            cout<<it<<" ";
+        }
+        
+        leftToRight = !leftToRight;
+    }
+    
+}
+
+ int main(){
+     
+     Node* root = new Node(10);
+     
+     root->left = new  Node(20);
+     root->right = new Node(30);
+     
+     root->left->left = new Node(40);
+     root->right->right = new Node(50);
+     
+     root->left->left->left = NULL;
+     root->right->right->right = NULL;
+     
+    //  priOrderTraversal(root);
+    //  InorderTraversal(root);
+    // leveOrderTraversal(root);
+    zigZagTraversal(root);
+     
+     return 0;
+ }
+
