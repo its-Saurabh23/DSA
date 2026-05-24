@@ -1,5 +1,4 @@
 // Consition or loops
-
 #include<iostream>
 #include<cctype>
 using namespace std;
