@@ -18,7 +18,6 @@ int main(){
 //     cout<<"A is Negative "<<endl;
 // }
 
-
 // int a,b;
 // // cin>>a >>b;
 // a= cin.get();
@@ -147,9 +146,6 @@ int main(){
 //     i = i+1;
 // }
 // cout<<"Sum of Even Nmber is "<<EvenSum<<endl;n;
-
-
-
 // int n;
 // cin>>n;
 // int sum = 0;
