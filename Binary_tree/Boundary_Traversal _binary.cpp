@@ -47,7 +47,6 @@ public:
     {
        
        vector<int>ans;
-       
         //base case
         if(root == NULL){
             return ans;
@@ -67,8 +66,9 @@ public:
         
         
         //traverse RightPart
-        
+   
         TraverseRight(root->right,ans);
+
         return ans;
         
     }
