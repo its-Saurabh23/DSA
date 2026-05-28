@@ -5,7 +5,7 @@ class Solution
     public:
     
     void InorderTraversal(struct Node* root,int &sum){
-        // base case
+       
         if(root == NULL){
             return;
         }
