@@ -65,7 +65,8 @@ Node* createNode(int data){
 }
 
 int main(){
-  //level 1 
+
+ //level 1 
 Node* root = createNode(1);
 //level 2
 root->left = createNode(2);
@@ -78,7 +79,6 @@ root->right->left = createNode(6);
 root->right->right =createNode(7);
 
 // level 4
-
 root->left->right->left = createNode(9);
 root->right->right->left = createNode(15);
 
