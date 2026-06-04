@@ -26,7 +26,9 @@ bool BalanceParenthese(string &str){
     return st.empty();
 }
 
+
 int main(){
+
     string str = "([])";
     cout << BalanceParenthese(str);
     return 0;
