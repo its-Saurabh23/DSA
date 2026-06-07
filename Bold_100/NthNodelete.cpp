@@ -23,6 +23,7 @@ Node* NthNodefromEnd(Node* head,int n){
     return temp;
 }
 
+
 Node* NthNodeOptimize(Node* head,int n){
     
     Node* fast = head;
