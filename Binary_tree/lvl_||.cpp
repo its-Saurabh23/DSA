@@ -1,7 +1,9 @@
 //  code is same just like level order traversal but at the end reverse the ans
+
 // this a trick
 class Solution {
 public:
+
     vector<vector<int>> levelOrderBottom(TreeNode* root) {
     vector<vector<int>> ans;
     if(root == NULL){
