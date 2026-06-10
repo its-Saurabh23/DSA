@@ -1,8 +1,5 @@
 #include<iostream>
-using namespace std;
-
-
-
+using namespace std
 
 /*void changeSign(int *p)
 {
@@ -13,9 +10,6 @@ using namespace std;
 void fun(int a[]) {
     cout << a[0] << " ";
 }
-
-
-
 
 void fun(int a)
 {
