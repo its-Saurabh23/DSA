@@ -3,7 +3,7 @@ using namespace std;
 
 bool BalanceParenthese(string &str){
 
-    stack<char> st;
+    stack<char>st;
     for(char ch : str){
         if(ch == '(' || ch == '{' || ch == '['){
             st.push(ch);
@@ -31,7 +31,7 @@ bool BalanceParenthese(string &str){
 
 int main(){
 
-    string str = "([])";
+    string str ="([])";
     cout << BalanceParenthese(str);
 
     return 0;
