@@ -56,8 +56,8 @@ int main()
 {
    vector<int>arr={0, 1, 2, 0, 1, 2};
    sortZeroAndOne(arr);
-   for(auto &x:arr){
-       cout<<x<<"\n";
+   for(auto &it:arr){
+       cout<<it<<"\n";
    }
     return 0;
 }
