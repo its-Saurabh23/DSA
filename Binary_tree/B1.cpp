@@ -7,6 +7,7 @@ int data;
 Node* left;
 Node* right;
 };
+
 void print(Node* root){
 //DFS Pree oder printing 
 
@@ -20,6 +21,7 @@ print(root->left);
 print(root->right);
 
 }
+
 Node* createTree(int data){
 Node* newNode = new Node();
 newNode->data = data;
