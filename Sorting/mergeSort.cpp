@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void merge(int arr[],int start,int mid,int end){
     int len1 = mid -start+1;
     int len2 = end - mid;
@@ -35,7 +36,7 @@ void merge(int arr[],int start,int mid,int end){
 }
 void  mergeSort(int arr[],int start,int end){
     
-if(start<end){
+if(start<=end){
     int mid = start + (end-start)/2;
     mergeSort(arr,start,mid);
     mergeSort(arr,mid+1,end);
@@ -49,7 +50,9 @@ void display(int arr[],int n){
         cout<<arr[i]<<" ";
     }
  }
+
 int main(){
+
 int n;
 cin>>n;
 int arr[n];
@@ -62,6 +65,7 @@ int start = 0;
 cout<<"Before sorting arr "<<endl;
 display(arr,n);
 cout<<endl;
+
 mergeSort(arr,0 ,n);
 cout<<"After sorting Arry "<<endl;
 
