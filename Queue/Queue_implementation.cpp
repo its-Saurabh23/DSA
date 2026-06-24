@@ -5,7 +5,6 @@ using namespace std;
 
 class Queue{
 
-// data member
 int *arr;
 int  qfornt;
 int  rear;
@@ -21,7 +20,6 @@ Queue(){
     
 } 
 
-// Functiosn in Queue.
 
 bool isEmpty(){
     if(qfornt == rear){
