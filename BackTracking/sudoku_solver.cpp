@@ -4,10 +4,12 @@ public:
 bool isSafe(int row,int col, vector<vector<char>>&board,char val){
       
   for(int i = 0; i<board.size();i++){
+
     // row 
      if(board[row][i] == val){
          return false;
      }
+
     // col
      if(board[i][col] == val){
          return false;
