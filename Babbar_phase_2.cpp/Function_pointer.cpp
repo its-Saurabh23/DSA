@@ -3,7 +3,7 @@ using namespace std;
 
 void print(int *p)
 {
-    // address of that pointer
+  
     cout<<p<<endl;
     // for value
     cout<<*p<<endl;
