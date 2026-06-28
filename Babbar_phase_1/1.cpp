@@ -4,7 +4,6 @@ using namespace std;
 int main(){
 
 // cout<<"Namaste  duniya";
-
 // cout<<"\n";
 //     int a = 123;
 //    cout<<a <<endl;
@@ -21,9 +20,10 @@ int main(){
 //    cout<<d <<endl;
 
 //  int size = sizeof(d);
-//     cout<<"Size of a is "<<size<<endl;
+//cout<<"Size of a is "<<size<<endl;
 // int a ='a';
 // cout<<a<<endl;
+
 // char ch = 98;
 // cout<<ch<<endl;
 
@@ -51,7 +51,7 @@ int main(){
 
 // bool first3 = (a<=b);
 // cout<<first3<<endl;
-// 
+
 // bool first4 = (a>=b);
 // cout<<first4<<endl;
 
