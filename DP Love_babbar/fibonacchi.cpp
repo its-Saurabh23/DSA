@@ -1,5 +1,4 @@
 // recusive appoarch 
-
 int fib(int n){
         // base case
         if(n == 1 || n == 0){
@@ -69,12 +68,7 @@ int main()
       dp[i] = dp[i-1] + dp[i-2];
     }
     cout<<dp[n]<<endl;
-
-
 }
-
-
-
 
 
 // space optimaization
