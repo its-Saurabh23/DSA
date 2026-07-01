@@ -40,20 +40,6 @@ switch(ch){
     break;
     default: cout<<"Enter a valid operation "<<endl;
 }
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
     
     return 0;
 
