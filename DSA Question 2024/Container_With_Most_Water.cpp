@@ -1,4 +1,5 @@
 class Solution {
+
 public:
     int maxArea(vector<int>& height) {
         int n = height.size();
@@ -13,7 +14,8 @@ public:
 
            maxiWater = max(maxiWater,area);
 
-        //    movie the pointer
+        // movie the pointer
+
          if(height[i]>height[j]){
              j--;
          }else{
