@@ -9,6 +9,7 @@ Node* right;
 };
 
 void print(Node* root){
+
 //DFS Pree oder printing 
 
 // base case
@@ -70,6 +71,7 @@ int main(){
 
  //level 1 
 Node* root = createNode(1);
+
 //level 2
 root->left = createNode(2);
 root->right =createNode(3);
