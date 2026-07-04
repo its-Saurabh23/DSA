@@ -3,6 +3,7 @@
 #include<cctype>
 using namespace std;
 #include<cstring>
+
 int main(){
 
 // int a;
@@ -24,7 +25,6 @@ int main(){
 // // cout<<"VAlue of a and b is "<<a <<" "<<b<<endl;
 
 // cout<<"Value of a is: "<<a<<endl;
-
 
 // int a ,b;
 
