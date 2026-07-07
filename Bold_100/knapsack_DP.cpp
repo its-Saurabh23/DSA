@@ -3,7 +3,7 @@ using namespace std;
 
 int kanpsnack(vector<int>&wt,vector<int>&arr,int W,int n){
    
-   
+   //base case 
     if(n == 0 || W == 0){
        return 0;
     }
