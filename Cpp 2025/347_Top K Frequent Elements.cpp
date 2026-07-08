@@ -6,7 +6,7 @@ public:
      for(int num :nums){
         mp[num]++;
      }
-                   // val  // key 
+                 
       priority_queue<pair<int, int>>pq;
      for(auto &it : mp){
         pq.push({it.second, it.first});
