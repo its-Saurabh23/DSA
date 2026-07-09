@@ -390,3 +390,86 @@ void zigZagTraversal(Node* root){
      return 0;
  }
 
+
+
+
+------------------------------------------------------------------------------------
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node{
+  public:
+  
+  int data;
+  Node* left;
+  Node* right;
+  
+  Node(int val){
+      data = val;
+      left = NULL;
+      right = NULL;
+  }
+};
+
+class BinarySearchTree {
+   public:
+   Node* root;
+   
+   BinarySearchTree(){
+       root = NULL;
+   }
+   
+   
+void BuildBinarySearchTree(int data){
+   root = insert(root,data);
+}
+
+ Node * insert(Node* node,int data){
+    
+    if(node == NULL){
+        return new Node(data);
+    }
+    
+    if(data < node->data){
+        node->left = insert(node->left,data);
+    }
+    else if(root->data<data){
+        node->right = insert(node->right,data);
+    }
+    return node;
+ } 
+ 
+ void Inorder(){
+    InorderHelper(root);
+ }
+ 
+ private:
+ void InorderHelper(Node* node ){
+     
+     if(node == NULL){
+         return;
+     }
+     InorderHelper(node->left);
+     std::cout << node->data <<" ";
+     InorderHelper(node->right);
+  }
+  
+}; 
+
+
+int main(){
+    
+    BinarySearchTree bst;
+    bst.BuildBinarySearchTree(50);
+    bst.BuildBinarySearchTree(30);
+    bst.BuildBinarySearchTree(70);
+    bst.BuildBinarySearchTree(20);
+    bst.BuildBinarySearchTree(40);
+    bst.BuildBinarySearchTree(60);
+    bst.BuildBinarySearchTree(80);
+    
+    bst.Inorder();
+    
+    return 0;
+}
