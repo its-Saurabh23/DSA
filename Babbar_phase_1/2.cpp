@@ -5,7 +5,6 @@ using namespace std;
 #include<cstring>
 
 int main(){
-
 // int a;
 // cin>>a;
 // //  cout<<"Value of n is "<<n<<endl;
@@ -19,11 +18,11 @@ int main(){
 // }
 
 // int a,b;
+
 // // cin>>a >>b;
 // a= cin.get();
 
-// // cout<<"VAlue of a and b is "<<a <<" "<<b<<endl;
-
+// // cout<<"VAlue of a and b is "<<a <<" "<<b;
 // cout<<"Value of a is: "<<a<<endl;
 
 // int a ,b;
