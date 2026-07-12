@@ -11,7 +11,6 @@ Node* right;
 void print(Node* root){
 
 //DFS Pree oder printing 
-
 // base case
 if(root == nullptr){
     return ;
@@ -30,6 +29,7 @@ newNode->left = newNode->right = nullptr;
 }
 
 int main(){
+
   // level 1 
   Node* root = createTree(1);
   root->left = createTree(2);
