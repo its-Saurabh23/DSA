@@ -1,4 +1,5 @@
 class Solution {
+
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         
@@ -8,7 +9,7 @@ public:
         for(string & str: strs){
             string sortedStr = str;
 
-            sort(sortedStr.begin(),sortedStr.end());
+     sort(sortedStr.begin(),sortedStr.end());
             mp[sortedStr].push_back(str);
         }
 
