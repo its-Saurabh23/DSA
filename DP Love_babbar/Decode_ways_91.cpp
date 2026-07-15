@@ -5,7 +5,7 @@ public:
         if(t[i] != -1){
             return t[i];
         }
-    //   base case
+    
     if(i == n){
         return t[i] = 1;
     }
