@@ -27,7 +27,7 @@ class Solution
          Node* frontNode = temp.first;
          int hd = temp.second;
          
-         //One to onr mapping
+         //One to one mapping
          if(topnode.find(hd) == topnode.end()){
              topnode[hd] = frontNode->data;
          }
