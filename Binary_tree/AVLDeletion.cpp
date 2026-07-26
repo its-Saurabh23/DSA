@@ -3,6 +3,7 @@ using namespace std;
 
 class Node
 {
+
 public:
     int data;
     int height;
@@ -245,6 +246,5 @@ int main()
     cout << endl;
 
     deleteTree(root);
-
     return 0;
 }
