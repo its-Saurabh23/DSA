@@ -11,6 +11,7 @@ class Solution
         }
         
         InorderTraversal(root->right,sum);
+
         int currentSum = root->data;
         root->data =  sum;
         sum = sum + currentSum;
