@@ -22,8 +22,9 @@ public:
 // Height
 int getHeight(Node *root)
 {
-    if (root == nullptr)
+    if (root == nullptr){
         return 0;
+    }
 
     return root->height;
 }
@@ -76,8 +77,9 @@ Node *leftRotation(Node *root)
 // Insert
 Node *insert(Node *root, int value)
 {
-    if (root == nullptr)
+    if (root == nullptr){
         return new Node(value);
+    }
 
     if (value < root->data)
         root->left = insert(root->left, value);
@@ -119,8 +121,9 @@ Node *insert(Node *root, int value)
 // Delete
 Node *deletion(Node *root, int target)
 {
-    if (root == nullptr)
+    if (root == nullptr){
         return nullptr;
+    }
 
     if (target < root->data)
     {
