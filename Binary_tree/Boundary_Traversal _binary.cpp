@@ -260,7 +260,7 @@ void leftView(Node* root){
 
 int heightOfBinaryTree(Node* root){
     
-    if(root == NULL){
+    if(root == nullptr){
         return 0;
     }
 
