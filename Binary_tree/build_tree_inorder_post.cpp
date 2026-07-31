@@ -1,4 +1,5 @@
 /*
+
 void createMap(int in[],map<int,int>&nodeToIndex,int n){
     
     for(int i =0; i<n; i++){
@@ -37,6 +38,5 @@ Node *buildTree(int in[], int post[], int n) {
     Node* ans = solve(in,post,postorderIndex,0,n-1,n,nodeToIndex);
     return ans;
 }
-
 
 */
