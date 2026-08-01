@@ -22,6 +22,7 @@ while(s<=e){
     }
     mid = s + (e-s)/2;
 }
+
 return s;
 }
 
@@ -32,5 +33,6 @@ int arr[5]={1,2,5,6,15};
 
 int Result = BinarySearch(arr,5 ,target);
 cout<<"Index of Target Value is = "<<Result;
+
 return 0;
 }
