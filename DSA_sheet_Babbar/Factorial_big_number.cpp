@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-// Factorial of big Numbers .
+// Factorial of big Numbers.
 
 void multiply(int arr[],int size,int i){
   int carry =0;
@@ -14,6 +14,7 @@ void multiply(int arr[],int size,int i){
      
      carry = result/10; 
   }
+
   while(carry>0){
     arr[size] = carry%10;
     size++;
