@@ -39,3 +39,61 @@ class Solution {
 };
 
 */
+
+#include<bit/stdc++.h>
+using namespace std;
+
+class  Node* {
+  public:
+  int value;
+  int height;
+
+  Node*left;
+  Node* right;
+
+  Node(int  data){
+   data = value;
+   height = 1;
+   left = NULL;
+   right = NULL;
+  }
+};
+
+void BottomView(Node* root){
+    
+    if(!root){
+     return;
+    }
+
+    map<int,int>mp;  // all ready store in soted form 
+    queue<pair<Node*,int>>q;    
+    q.push({root,0});
+
+    while(!q.empty()){
+       auto it = q.front();
+       q.pop();
+
+       Node* temp = it.first;
+       int HD = it.second;
+
+        mp[HD] = temp->data;   // bottom view store 
+
+       if(temp->left){
+        q.push({temp->left,HD-1});
+       }
+       if(temp->right){
+        q.push({temp->right,HD+1});
+       }
+    }
+    for(const auto &it:mp){
+        std::cout<<x<<" ";
+    }
+}
+
+
+int mian(){
+   
+    Node* root = NULL;
+    BottomView(root);
+    return 0;
+}
