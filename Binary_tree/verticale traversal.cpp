@@ -102,3 +102,64 @@ public:
 };
 
 */
+#include<bits/stdc++.h>
+using namespace std;
+
+
+class Node{
+   public:
+   int data;
+   int height;
+
+   Node* left;
+   Node* right;
+
+   Node(int value){
+       data = value;
+       height = 1;
+       left = NULL;
+       right = NULL;
+   }
+}
+
+void VerticalOrderTraversal(Node* root){
+      if(!root){
+       return;
+      }
+
+      map<int,vector<int>>mp;
+      queue<pair<Node*,int>>q;
+      
+      q.push({root,0});
+
+      while(!q.empty()){
+         auto it = q.front();
+         q.pop();
+
+         Node* temp = it.first;
+         int hd  = it.second;
+         mp[hd].push_back(temp->data);
+
+         if(temp->left){
+           q.push({temp->left,hd-1});
+         }
+         if(temp->right){
+           q.push({temp->right,hd+1});
+         }
+      }
+
+      for(const auto &it:mp){
+         for(int i:it.second){
+            cout<<i<<" ";
+         }
+         cout<<endl;
+      }
+}
+
+
+int main(){
+   
+    Node* root = NULL;
+
+    VerticalOrderTraversal(root);
+}
