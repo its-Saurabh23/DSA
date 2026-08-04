@@ -5,6 +5,7 @@ class Node
 {
 
 public:
+
     int data;
     int height;
     Node *left;
@@ -238,7 +239,7 @@ int main()
     for (int x : values)
         root = insert(root, x);
 
-    cout << "Inorder before deletion:\n";
+    cout << "Inorder before deletion:\n"
     inorder(root);
     cout << endl;
 
