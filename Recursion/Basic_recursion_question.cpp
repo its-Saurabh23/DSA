@@ -58,7 +58,16 @@ class Solution{
         swap(v[left],v[right]);
         reverse(v,left+1,right-1);
     }
-   
+     bool palindrome(string &str,int left,int right){
+        //Base case 
+        if(left>right){
+            return true;
+        }
+        // Induction 
+        if(str[left] != str[right])return false;
+       return palindrome(str,left+1,right-1);  // recursion hypothese.
+
+    }
 };
 
 
@@ -89,6 +98,16 @@ int main(){
     obj.reverse(arr,0,size);
     for(const auto &x:arr){
         std::cout<< x <<" ";
+    }
+    string str = "1221";
+    int i = 0;
+    int last = str.lenght();
+    
+    bool result = obj.palindrome(str,i,last);
+    if(!result){
+        std::cout<<"Not a Palindrome string"<<std::endl;
+    }else{
+        std::cout<<"Palindrome string"<<std::endl;
     }
 
     return 0;
