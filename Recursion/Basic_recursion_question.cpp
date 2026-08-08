@@ -49,6 +49,15 @@ class Solution{
         return fibonacci(n-1) + fibonacci(n-2);  // recursive call;
     }
    }
+ void reverse(vector<int>&v,int left,right){
+
+        // Base case 
+        if(left>right){
+                return;
+        }
+        swap(v[left],v[right]);
+        reverse(v,left+1,right-1);
+    }
    
 };
 
@@ -73,6 +82,14 @@ int main(){
     int fibN = 5;
     int fibAns = obj.fibonacci(fibN);
     std::cout<<fibAns<<std::endl;
+
+     vector<int>arr = {1,2,3,4,5};
+    int size = arr.size()-1;
+
+    obj.reverse(arr,0,size);
+    for(const auto &x:arr){
+        std::cout<< x <<" ";
+    }
 
     return 0;
 }
