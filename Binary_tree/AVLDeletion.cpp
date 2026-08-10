@@ -236,8 +236,8 @@ int main()
 
     vector<int> values = {50, 30, 70, 20, 40, 60, 80, 10, 25};
 
-    for (int x : values)
-        root = insert(root, x);
+    for (int x : values){
+        root = insert(root, x);}
 
     cout << "Inorder before deletion:\n"
     inorder(root);
