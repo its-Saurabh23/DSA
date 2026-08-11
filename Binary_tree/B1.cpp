@@ -10,7 +10,7 @@ Node* right;
 
 void print(Node* root){
 
-//DFS Pree oder printing 
+//DFS Pree Order printing 
 // base case
 if(root == nullptr){
     return ;
