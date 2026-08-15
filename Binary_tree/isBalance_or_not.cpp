@@ -3,7 +3,7 @@
 using namespace std;
 
 
-// Tree Node
+// Tree Node structure 
 struct Node {
     int data;
     Node* left;
