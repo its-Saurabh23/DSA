@@ -47,3 +47,55 @@ bool  solve(TreeNode* root,int targetSum,int sum){
 };
 
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node {
+    public:
+    int data;
+    int height;
+    Node* left;
+    Node* right;
+    
+    Node(int value){
+       this->data = value;
+       this->height = 1;
+       left = NULL;
+       right = NULL; 
+    }
+};
+
+
+class Solution{
+    public:
+    bool solve(Node* root,int target){
+        if(!root){
+            return 0;
+        }
+
+        int subSum = root->data - target;   // two sum problem statement logic 
+        
+        if(root->left == NULL && root->right == NULL && sum == 0 ){
+            return true;
+        }
+        bool left = 0; bool right = 0;
+        
+        if(root->left){
+            left = solve(root->left,subSum);
+        }
+        if(root->right){
+            right = solve(root->right,subSum);
+        }
+        return left || right;
+    }
+
+};
+
+int mian(){
+   Node* root = new Node(1);
+   
+   Solution Obj;
+   obj.solve(root,10);
+    return 0;
+}
