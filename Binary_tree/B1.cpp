@@ -473,3 +473,69 @@ int main(){
     
     return 0;
 }
+
+
+******************************************************************************************************
+    
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node{
+    public:
+    int data;
+    int height;
+    Node* left;
+    Node* right;
+
+    Node(int value){
+        this->data = value;
+        this->height = 1;
+        left = NULL:
+        right = NULL;
+    }
+}; 
+
+class Solution {
+    public: 
+    Node* solve(root root,int n1,int n2){
+
+        if(!root) return nullptr;
+
+        if(root->data == n1 || root->data == b2){
+            return root;
+        }
+
+        Node* left = solve(root->left,n1,n2);
+        Node* right = solve(root->right,n1,n2);
+
+        if(left && right){
+            return root;
+        }
+        return left? left :right
+
+    }
+    Node* lcaBST(Node* root,int n2,int n2){
+      if(!root)return nullptr;
+
+      if(root->data>n1 && root->data>n2){
+        return lcaBST(root->left,n1,n2);
+      }
+      if(n1>root->data && n2>root->data){
+        return lcaBST(root->right,n1,n2);
+      }
+      return root;
+    }
+
+}
+
+int mian(){
+
+  Node* root = new Node(10);
+  root->left = new Node(20);
+  root->right = new Node(30);
+  Node* temp = solve(root);
+
+  std::cout<<temp->data<<std::endl;
+
+    return 0;
+}
