@@ -19,7 +19,7 @@ cout<<c[3];
 
 // int n = 15;
 // int third[15] ={2,7};
-// int n= 10;
+// int n = 10;
 // int fouth[10] ={0};
 // printArray(third,15);
 
@@ -45,7 +45,8 @@ cout<<c[3];
 
 // // initilising with zero not possible with 1;
 // int fouth[10] ={0};
-// int n1 =10;
+// int n1 = 10;
+
 // cout<<"Printing the array "<<endl;
 // for (int i = 0; i <n1; i++)
 // {
