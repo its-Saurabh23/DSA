@@ -539,3 +539,64 @@ int mian(){
 
     return 0;
 }
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node{
+ public:
+ int data;
+ int height;
+ Node* left;
+ Node* right;
+
+ Node(int value){
+  this->data = value;
+  this->height = 1;
+  left = NULL;
+  right = NULL;
+ }
+
+};
+
+class Solution{
+   public:
+   // height of tree 
+   solve(Node* root){
+      if(!root)return 0;
+
+      int left = solve(root->left);
+      int right = solve(root->right);
+      return max(left,,right) + 1;
+   }
+
+   // Post orderTraversal O(n)
+   int countNode(Node* root){
+    
+    if(!root)return 0;
+
+    int left = countNode(root->left);
+    int right = countNode(root->right);
+    return left + right + 1
+   }
+
+   //Sum of Nodes Post order Traversal O(n);
+   int SumOfNodes(Node* root){
+        
+        if(!root)return 0;
+
+        int left = SumOfNodes(root->left);
+        int right = SumOfNodes(root->right);
+        
+        return left+right+root->data;
+   }
+};
+
+int main(){
+    Node* root = new Node(1);
+    root->left = new Node(2);
+    root->right  = new Node(3);
+    root->right->left = new Node(4);
+    root->right->right = new Node(5); 
+    return 0;
+}
