@@ -11,6 +11,7 @@ Node* right;
 void print(Node* root){
 
 //DFS Pree Order printing 
+
 // base case
 if(root == nullptr){
     return ;
@@ -39,6 +40,7 @@ int main(){
   root->left->right = createTree(5); 
    print(root);
    cin.get();  
+
  return 0;
 
 }
