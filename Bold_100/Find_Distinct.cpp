@@ -21,12 +21,14 @@ int main(){
          
         if(mask & num){
             first_distinct ^= num;
+
         }else{
            second_distinct ^= num;
         }
     }
    
     cout << "First distinct: " << first_distinct << endl;
+
     cout << "Second distinct: " << second_distinct << endl;
 
 }
