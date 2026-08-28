@@ -94,8 +94,10 @@ temp->next = NULL;
  }
 }
 
+
 int main(){
-    // create a new Nonde
+
+// create a new Nonde
 Node* node1 = new Node(10);
 // cout<< node1-> data <<endl;
 // cout<< node1-> next<<endl;
@@ -169,7 +171,7 @@ Node* node1 = new  Node(10);
 // cout<<node1->data<<endl;
 // cout<<node1->next<<endl;
 
-// Head  pointed to node1;
+//Head  pointed to node1;
 Node* head = node1;
 print(head);
 
