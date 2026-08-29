@@ -15,7 +15,7 @@ int binarySearch(int arr[],int n,int key){
        {
         return mid;
        }
-    //    go to write 
+    // go to right 
        if (key>arr[mid])
        {
         start = mid+1;
