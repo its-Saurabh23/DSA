@@ -40,6 +40,7 @@ bool isSafe(int row,int col,vector<string>&board,int n){
 }
     void solve(int col,vector<vector<string>>&ans,
     vector<string> &board,int n){
+
         // base case
         if(col == n){
              ans.push_back(board);
@@ -65,6 +66,7 @@ bool isSafe(int row,int col,vector<string>&board,int n){
         vector<vector<string>> ans;
 
         solve(0,ans,board,n);
+
         return ans;
 
     }
