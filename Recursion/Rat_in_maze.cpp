@@ -1,4 +1,4 @@
-/*
+
 bool isSafe(int x,int y,int n,vector<vector<int>>visted, vector<vector<int>>&m){
         
         if((x>=0 && x<n) &&(y>=0 && y<n )&& visted[x][y] == 0 && m[x][y] == 1){
@@ -87,4 +87,3 @@ bool isSafe(int x,int y,int n,vector<vector<int>>visted, vector<vector<int>>&m){
          sort(ans.begin(),ans.end());
          return ans;
     }
-*/
