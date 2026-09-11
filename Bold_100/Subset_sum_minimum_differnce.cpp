@@ -40,6 +40,5 @@ int main(){
     std::vector<int>arr={1, 6, 11, 5};
     
     minimumDiff(arr);
-
     return 0;
 }
