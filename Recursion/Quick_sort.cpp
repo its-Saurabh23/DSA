@@ -17,8 +17,6 @@ int partition(int *arr,int s,int e){
     int pivotIndex = s+ cnt;
    swap(arr[pivotIndex],arr[s]);
 
-//  Left right part
-
 int i  = s,j =e;
 while(i<pivotIndex && j>pivotIndex){
  while(arr[i]<pivot){
