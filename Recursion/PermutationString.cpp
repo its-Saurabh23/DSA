@@ -13,16 +13,13 @@ public:
         }
 
         for (int i = 0; i < str.length(); i++) {
-
             // Choose
             char ch = str[i];
-
             currentString += ch;
-
+            
             // Remove current character
             string remainingString =
                 str.substr(0, i) + str.substr(i + 1);
-
             // Explore
             helper(remainingString, currentString, ans);
 
@@ -32,11 +29,8 @@ public:
     }
 
     vector<string> solve(string str) {
-
         vector<string> ans;
-
         helper(str, "", ans);
-
         return ans;
     }
 };
@@ -44,14 +38,11 @@ public:
 int main() {
 
     string str = "ABC";
-
     Solution obj;
-
     vector<string> ans = obj.solve(str);
-
     for (string s : ans) {
         cout << s << " ";
     }
-
+    
     return 0;
 }
