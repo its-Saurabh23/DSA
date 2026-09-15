@@ -8,7 +8,7 @@ class Solution{
     
     void solve(vector<int>arr,int start,int target,vector<int>&curr){
           
-        // base case 
+        
         if(target == 0){
                ans.push_back(curr) 
                return;
