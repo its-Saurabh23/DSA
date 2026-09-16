@@ -87,3 +87,115 @@ bool isSafe(int x,int y,int n,vector<vector<int>>visted, vector<vector<int>>&m){
          sort(ans.begin(),ans.end());
          return ans;
     }
+
+
+
+
+-----------------------------------------------------------------------------------------
+        #include<bits/stdc++.h>
+using namespace std;
+
+class  Solution {
+
+   public:
+   bool isSafe(vector<vector<int>>&m,int n,int x,int y,vector<vector<int>>&vis){
+
+    if( x<0 || x >= n || y<0 || y>=n || m[x][y] == 0 || vis[x][y] == 1){
+        return false;
+     }
+     
+    return true;
+   }
+
+   void helper(vector<vector<int>>&m,int n,vector<string>&ans,string path,vector<vector<int>>vis,int x,int y){
+       
+    // Base case
+    if(x == n-1 && y == n-1){
+        ans.push_back(path);
+        return;
+    }
+    vis[x][y] = 1;
+    // Recusive call 
+    int newx;
+    int newy;
+
+     newx = x+1;
+     newy = y;
+       
+    // Down
+    if(isSafe(m,n,newx,newy,vis)){
+        //pic 
+         path +="D";
+        //exploar
+         helper(m,n,ans,path,vis,newx,newy);
+        // undo
+        path.pop_back();
+    }
+
+     newx = x-1;
+     newy = y;
+    // Up
+    if(isSafe(m,n,newx,newy,vis)){
+         path += "U";
+         helper(m,n,ans,path,vis,newx,newy);
+         path.pop_back();
+    }
+
+     newx = x;
+     newy = y-1; 
+    // Left 
+     if(isSafe(m,n,newx,newy,vis)){
+        path += "L";
+        helper(m,n,ans,path,vis,newx,newy);
+        path.pop_back();
+     }
+
+      newx = x;
+      newy = y+1;
+    // Right
+    if(isSafe(m,n,newx,newy,vis)){
+         path +="R";
+         helper(m,n,ans,path,vis,newx,newy);
+         path.pop_back();
+    }
+
+    vis[x][y] = 0;
+   }
+
+   vector<string>solve(vector<vector<int>>&m){
+       vector<string>ans;
+
+    if(m[0][0] == 0){
+           return ans;
+       }
+
+    int n = m.size();
+    vector<vector<int>>vis(n,vector<int>(n,0));
+    int srcx = 0;
+    int srcy = 0; 
+    string path = "";
+
+    helper(m,n,ans,path,vis,srcx,srcy);
+    return ans;
+    }   
+};
+
+
+ int main() {
+
+    vector<vector<int>> m = {
+        {1, 1, 0, 0},
+        {1, 1, 0, 1},
+        {0, 1, 1, 1},
+        {0, 1, 1, 1}
+    };
+
+    Solution obj;
+    vector<string> ans = obj.solve(m);
+
+    for (string str : ans) {
+        cout << str << " ";
+    }
+
+    return 0;
+}
