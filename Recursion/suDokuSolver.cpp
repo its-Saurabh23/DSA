@@ -68,3 +68,79 @@ bool solve(int row,int col,vector<vector<char>>&mat){
         solve(0,0,board);
     }
 };
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+     #include<bits/stdc++.h>
+using  namespace std;
+
+
+class Solution{
+    public:
+
+  
+
+  bool isSafe(vector<vector<char>>&mat,int row,int col,char digit){
+    // row,
+    for(int i = 0;i<9;i++){
+          if(mat[row][i] == digit)return false;
+    }
+    //col 
+    for(int j =0;j<9; j++){
+        if(mat[j][col] == digit)return false;
+    }
+    // 3*3 mt
+
+    int newRow = (row/3)*3;
+    int newCol = (col/3)*3;
+
+    for(int i = newRow; i<newRow+3; i++){
+        for(int j= newCol; j<newCol+3; j++){
+            if(mat[i][j] == digit) {
+                return false;
+            }
+        }
+    }
+    return true;
+  }
+
+
+bool solve(vector<vector<char>>&mat,int row,int col){
+    
+    //Base case
+    if(row == 9){
+        return true;
+    }
+    if(col == 9){
+        return solve(mat,row+1,col);
+    }
+    if(mat[row][col] != '.'){
+        return solve(mat,row,col+1);
+    }
+
+    for(char digit = '1'; digit<='9'; i++){
+         if(isSafe(mat,row,col,digit)){
+            //pic
+             mat[row][col] = digit;
+             // exploar
+             if(solve(mat,row,col+1)){
+                return true;
+            };
+             // backtrack
+             mat[row][col] = '.';
+         }
+    }
+}
+}
+
+int main(){
+  vector<vector<char>>mat;
+  if(sove(mat,0,0)){
+  std::<<true;
+  }else{
+    std::false;
+  }
+
+   return 0;
+}
