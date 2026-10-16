@@ -1,8 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// When solving partition problems ask:
-
+// When solving partition problems ask:
 // How many regions?
 // Is order important?
 // One pass or multiple pass?
@@ -55,6 +54,7 @@ void SortZerosOnces(vector<int>&arr){
 int main()
 {
    vector<int>arr={0, 1, 2, 0, 1, 2};
+
    sortZeroAndOne(arr);
    for(auto &it:arr){
        cout<<it<<"\n";
