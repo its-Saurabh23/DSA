@@ -2,9 +2,7 @@
 using namespace std;
 
 bool BalanceParenthese(string &str){
-
     stack<char>st;
-
     for(char ch : str){
         if(ch == '(' || ch == '{' || ch == '['){
             st.push(ch);
@@ -13,10 +11,8 @@ bool BalanceParenthese(string &str){
             if(st.empty()){
                 return false;
             }
-
             char top = st.top();
             st.pop();
-
             // matching check
             if((ch == ')' && top != '(') ||
                (ch == '}' && top != '{') ||
@@ -28,8 +24,6 @@ bool BalanceParenthese(string &str){
 
     return st.empty();
 }
-
-
 int main(){
     string str ="([])";
     cout << BalanceParenthese(str);
