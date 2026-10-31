@@ -2,8 +2,6 @@
 using namespace std; 
 
 int kanpsnack(vector<int>&wt,vector<int>&arr,int W,int n){
-   
-   
     if(n == 0 || W == 0){
        return 0;
     }
@@ -33,7 +31,6 @@ return 0
 
 #include <bits/stdc++.h>
 using namespace std;
-
 int knapsack(int wt[],int val[],int W,int n){
     
     // Base case 
@@ -49,11 +46,9 @@ int knapsack(int wt[],int val[],int W,int n){
     else if(wt[n-1]>W){
         return knapsack(wt,val,W,n-1);
     }
-    
 }
 
 int main()
 {
- 
     return 0;
 }
